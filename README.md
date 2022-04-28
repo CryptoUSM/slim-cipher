@@ -1,5 +1,5 @@
 # SLIM
-SLIM is a ultra lightweight block cipher using 32-bit blocks and 80 bits master key (#1).
+SLIM is a ultra lightweight block cipher using 32-bit blocks and 80 bits master key [[1]](#1).
 
 ## References
 <a id="1">[1]</a> 
