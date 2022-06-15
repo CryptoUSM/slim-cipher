@@ -21,7 +21,7 @@ int main() {
     int round1= 13; // for thre 13-round key recovery
     int round2= 14;
 
-    std::pair<uint32_t, uint32_t> plaintext_pair[50];
+    std::pair<uint32_t, uint32_t> plaintext_pair[pt_pairs_count];
 
     uint32_t alpha = 0x0B82000a; // pDiff after 12r
     uint32_t beta = 0x0a00801b; // cDiff which resulting pDiff
@@ -30,14 +30,14 @@ int main() {
     uint32_t second;
     int increament = 3; //should be a prime number
 
-    for (int j = 0; j < (2^10); j++) {
+    for (int j = 0; j < pt_pairs_count; j++) {
 
         second = first xor alpha;
 
         uint32_t encrypted_first = encrypt(first, round1);
         uint32_t encrypted_second = encrypt(second, round1);
 
-//        uint32_t plaintext_diff = first xor second;
+//      uint32_t plaintext_diff = first xor second;
         uint32_t ciphertext_diff = encrypted_first xor encrypted_second;
 
         if ((ciphertext_diff & beta) != 0) { // matched at somewhere
