@@ -18,7 +18,7 @@ int circular_shift(uint8_t input, int moves ){
     return (output&0xF);
 }
 
-uint16_t * key_scheduling(uint8_t input_master_key[20], int round){
+uint16_t *key_scheduling(uint8_t input_master_key[20], int round){
     // starting from msb(left 40bit) towrads lsb(right 40bit), every element is a nibble
     // break the 80bit into 20 4bit nibbles
     uint8_t master_key[20];
@@ -26,7 +26,7 @@ uint16_t * key_scheduling(uint8_t input_master_key[20], int round){
 
     uint8_t lsb[10];
     uint8_t msb[10];
-    uint16_t round_key[16];
+    static uint16_t round_key[16];
 
 
     uint8_t *temp;
@@ -67,12 +67,12 @@ uint16_t * key_scheduling(uint8_t input_master_key[20], int round){
 
     }
 
-//    int slim_sBox[16] = {12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2};
+    int slim_sBox[16] = {12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2};
 
-    int lbc_sbox[16]={0, 8, 6, 0xd,
-                      5, 0xf, 7, 0xc, 4, 0xe,
-                      2, 3, 9,  1, 0xb, 0xa
-    };
+//    int lbc_sbox[16]={0, 8, 6, 0xd,
+//                      5, 0xf, 7, 0xc, 4, 0xe,
+//                      2, 3, 9,  1, 0xb, 0xa
+//    };
 
     uint8_t intermediate_msb_value[10];
     uint8_t intermediate_lsb_value[10]; // sbox value for the msb
@@ -110,7 +110,7 @@ uint16_t * key_scheduling(uint8_t input_master_key[20], int round){
                     uint8_t shifted_msb_nibble = circular_shift(msb[nibble_index], 3);
 
                     // important, serve as one of the new key's nibble
-                    uint8_t sbox_lsb_msb = lbc_sbox[int(shifted_lsb_nibble xor msb[nibble_index])];
+                    uint8_t sbox_lsb_msb = slim_sBox[int(shifted_lsb_nibble xor msb[nibble_index])];
                     intermediate_lsb_value[nibble_index] = sbox_lsb_msb;
 
                     nibble_output = (shifted_msb_nibble xor sbox_lsb_msb);
@@ -127,7 +127,7 @@ uint16_t * key_scheduling(uint8_t input_master_key[20], int round){
         output=0;
 
     }
-    
+
     return round_key;
 
 }
