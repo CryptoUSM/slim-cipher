@@ -1,0 +1,139 @@
+//
+// Created by Chan Yen Yee on 13/06/2022.
+//
+
+#include <iostream>
+#include <utility>
+#include <bit>
+#include <bitset>
+#include "key.h"
+#include "math.h"
+#include <vector>
+
+#include <fstream>
+#include <cstdlib>
+#include <time.h>
+
+
+/*
+ * r    pDiff     cDiff     w
+ * 12 0B82 000A 0A00 801B 2^−28
+ * 13 A208 A000 0A00 801B 2^−31
+ * 14 0290 9000 0090 9004 2^−34
+ * */
+
+
+
+int main() {
+    clock_t tStart = clock();
+
+    int pt_pairs_count = pow(2, 30);
+//    int pt_pairs_count = 10000;
+
+    int round1 = 13; // for thre 13-round key recovery
+    int round2 = 14;
+
+//    std::pair<uint32_t, uint32_t> plaintext_pair[pt_pairs_count];
+
+    std::vector<uint32_t> first_plaintext;
+    std::vector<uint32_t> second_plaintext;
+    std::vector<uint32_t> key_counter;
+
+    uint32_t alpha = 0x0B82000a; // pDiff after 12r
+    uint32_t beta = 0x0a00801b; // cDiff which resulting pDiff
+
+    uint16_t l16_cDiff = ((beta >> 16) & 0xffff); //0a00
+    uint16_t r16_cDiff = (beta & 0xffff); //801b
+
+//    l16_cDiff: a00
+//    r16_cDiff: 801b
+//    r16_cDiff_fbox: 834d ----> F(801b)
+//    mask(make all star to 0): a000300
+//    active_bits_position: ffff0f00
+
+    uint16_t r16_cDiff_fbox = (permutation(substitution(r16_cDiff)) xor l16_cDiff);
+
+    // only second sbox is fixed for r16:801b // filtering_pattern
+    uint32_t mask = (l16_cDiff << 16) | (0x0f00 & r16_cDiff_fbox);
+
+    //make all inactive bits to 1
+    uint32_t active_bits_position = (((l16_cDiff | 0xffff) << 16) + (r16_cDiff_fbox | 0x0f00)) & 0xffff0f00;
+    // mask=1000 0011 0100 1101 (right), all
+    // pattern= 0a00 **** 0011 **** **** --> active sbox= non zero input
+
+
+    uint32_t first = 0xa4321411;
+    uint32_t second;
+    int increament = 7; //should be a prime number
+
+    std::ofstream outdata;
+    outdata.open("attack-output.txt"); // opens the file
+    if( !outdata ) { // file couldn't be opened
+        std::cerr << "Error: file could not be opened" << std::endl;
+        exit(1);
+    }
+
+
+    for (int j = 0; j < pt_pairs_count; j++) {
+
+        second = first xor alpha;
+
+        uint32_t encrypted_first = encrypt(first, round1);
+        uint32_t encrypted_second = encrypt(second, round1);
+
+        uint32_t ciphertext_diff = encrypted_first xor encrypted_second;
+
+//        ciphertext_diff= 0x0a003311;
+
+        if (((ciphertext_diff xor mask) & active_bits_position) == 0) {
+            first_plaintext.push_back(first);
+            second_plaintext.push_back(second);
+
+            outdata<< "round "<< std::dec<< j << ": \n";
+            outdata<< "first: "<< std::hex<< first << "\n";
+            outdata<< "second: "<< std::hex<< second << "\n";
+            outdata<< "--------------- "<< "\n";
+        }
+
+        first = first +increament;
+    }
+
+
+
+uint32_t key_counters= pow(2,12); 
+std::vector uint32_t subkeys; 
+std::vector uint32_t subkeys_hits; 
+
+// prepare key
+// pattern: 0000*0** -->0a00801b
+For (int j=0; j<key_counter; j++){
+
+generated_key = Use the OR AND bitwise; 
+
+	
+Subkeys.push_back(generated_key);	
+}
+
+
+
+For (int j=0; j<subkey.length; j++){
+	for (int k=0; k<first_plaintext.length; k++){
+		xx= decrypt(first_plaintext[j], 1, subkey);
+		yy= decrypt(first_plaintext[j], 1, subkey);
+
+		If (xx xor yy == 0x00a0801b){
+			subkeys_hits[j]+=1;
+		}
+	}	
+}
+
+// most_possible_key= subkeys.find_max (encounter)
+// match with your 12th- subkey
+
+
+    outdata<< "done! \n";
+    outdata<< "Time taken: " << ((double)(clock() - tStart)/CLOCKS_PER_SEC);
+    outdata.close();
+
+}
+
