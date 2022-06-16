@@ -1,0 +1,3953 @@
+//starter: 0xa4321411, increment=7, pow(2,30) 
+
+
+round 1648067: 
+first: a4e21c66
+second: af601c6c
+--------------- 
+round 2532196: 
+first: a5408bcd
+second: aec28bc7
+--------------- 
+round 8331801: 
+first: a7ac02c0
+second: ac2e02ca
+--------------- 
+round 10076560: 
+first: a8665f01
+second: a3e45f0b
+--------------- 
+round 10460854: 
+first: a88f6b0b
+second: a30d6b01
+--------------- 
+round 12645489: 
+first: a978c328
+second: a2fac322
+--------------- 
+round 13697996: 
+first: a9e92ea5
+second: a26b2eaf
+--------------- 
+round 15194925: 
+first: aa89124c
+second: a10b1246
+--------------- 
+round 17594377: 
+first: ab895c50
+second: a00b5c5a
+--------------- 
+round 20133946: 
+first: ac989da7
+second: a71a9dad
+--------------- 
+round 20793457: 
+first: acdf0f28
+second: a75d0f22
+--------------- 
+round 21690447: 
+first: ad3ede3a
+second: a6bcde30
+--------------- 
+round 22412902: 
+first: ad8c08db
+second: a60e08d1
+--------------- 
+round 23494838: 
+first: adff990b
+second: a67d9901
+--------------- 
+round 23625347: 
+first: ae0d89a6
+second: a58f89ac
+--------------- 
+round 30427561: 
+first: b0e417b0
+second: bb6617ba
+--------------- 
+round 31498478: 
+first: b1567a93
+second: bad47a99
+--------------- 
+round 31555317: 
+first: b15c8cc4
+second: bade8cce
+--------------- 
+round 32274425: 
+first: b1a95be0
+second: ba2b5bea
+--------------- 
+round 33336926: 
+first: b21ad8a3
+second: b998d8a9
+--------------- 
+round 34888034: 
+first: b2c085bf
+second: b94285b5
+--------------- 
+round 36956912: 
+first: b39d80a1
+second: b81f80ab
+--------------- 
+round 38212600: 
+first: b4239fd9
+second: bfa19fd3
+--------------- 
+round 38726837: 
+first: b45a8d04
+second: bfd88d0e
+--------------- 
+round 39331000: 
+first: b49b1519
+second: bf191513
+--------------- 
+round 40213308: 
+first: b4f952b5
+second: bf7b52bf
+--------------- 
+round 42799117: 
+first: b60d846c
+second: bd8f8466
+--------------- 
+round 44332844: 
+first: b6b15645
+second: bd33564f
+--------------- 
+round 45266257: 
+first: b7150948
+second: bc970942
+--------------- 
+round 46341875: 
+first: b787ecb6
+second: bc05ecbc
+--------------- 
+round 47871973: 
+first: b82b5b54
+second: b3a95b5e
+--------------- 
+round 48575472: 
+first: b8767fa1
+second: b3f47fab
+--------------- 
+round 50135696: 
+first: b91d2601
+second: b29f260b
+--------------- 
+round 50414972: 
+first: b93afa75
+second: b2b8fa7f
+--------------- 
+round 51836787: 
+first: b9d2d836
+second: b250d83c
+--------------- 
+round 52914367: 
+first: ba45f14a
+second: b1c7f140
+--------------- 
+round 53049830: 
+first: ba54695b
+second: b1d66951
+--------------- 
+round 53308412: 
+first: ba7007f5
+second: b1f207ff
+--------------- 
+round 55019848: 
+first: bb26d509
+second: b0a4d503
+--------------- 
+round 55612111: 
+first: bb6617ba
+second: b0e417b0
+--------------- 
+round 56597732: 
+first: bbcf5e4d
+second: b04d5e47
+--------------- 
+round 56765109: 
+first: bbe13f04
+second: b0633f0e
+--------------- 
+round 58467079: 
+first: bc970942
+second: b7150948
+--------------- 
+round 59722189: 
+first: bd1d18ac
+second: b69f18a6
+--------------- 
+round 61052604: 
+first: bdab3335
+second: b629333f
+--------------- 
+round 62518380: 
+first: be47c305
+second: b5c5c30f
+--------------- 
+round 64155967: 
+first: bef6acca
+second: b574acc0
+--------------- 
+round 65397858: 
+first: bf7b52bf
+second: b4f952b5
+--------------- 
+round 66270683: 
+first: bfd88d0e
+second: b45a8d04
+--------------- 
+round 66796529: 
+first: c010b7a8
+second: cb92b7a2
+--------------- 
+round 67028585: 
+first: c02980f0
+second: cbab80fa
+--------------- 
+round 67208241: 
+first: c03cb168
+second: cbbeb162
+--------------- 
+round 67656913: 
+first: c06c9dc8
+second: cbee9dc2
+--------------- 
+round 68861041: 
+first: c0ed3b28
+second: cb6f3b22
+--------------- 
+round 70295912: 
+first: c1867de9
+second: ca047de3
+--------------- 
+round 70393469: 
+first: c190e97c
+second: ca12e976
+--------------- 
+round 70537762: 
+first: c1a052ff
+second: ca2252f5
+--------------- 
+round 71551132: 
+first: c20c9055
+second: c98e905f
+--------------- 
+round 71602490: 
+first: c2120ca7
+second: c9900cad
+--------------- 
+round 72001103: 
+first: c23ca03a
+second: c9bea030
+--------------- 
+round 72088300: 
+first: c245f085
+second: c9c7f08f
+--------------- 
+round 72438389: 
+first: c26b5544
+second: c9e9554e
+--------------- 
+round 72721289: 
+first: c2898cd0
+second: c90b8cda
+--------------- 
+round 75597764: 
+first: c3bcca6d
+second: c83eca67
+--------------- 
+round 76044275: 
+first: c3ec7bb6
+second: c86e7bbc
+--------------- 
+round 76114429: 
+first: c3f3f9fc
+second: c871f9f6
+--------------- 
+round 77162717: 
+first: c463f21c
+second: cfe1f216
+--------------- 
+round 78090519: 
+first: c4c70bb2
+second: cf450bb8
+--------------- 
+round 78743814: 
+first: c50cd33b
+second: ce8ed331
+--------------- 
+round 80582624: 
+first: c5d13b31
+second: ce533b3b
+--------------- 
+round 83335288: 
+first: c6f73f59
+second: cd753f53
+--------------- 
+round 84281058: 
+first: c75c443f
+second: ccde4435
+--------------- 
+round 84914056: 
+first: c79fe0c9
+second: cc1de0c3
+--------------- 
+round 85010486: 
+first: c7aa2d8b
+second: cc282d81
+--------------- 
+round 85073141: 
+first: c7b0dec4
+second: cc32dece
+--------------- 
+round 85835591: 
+first: c8024f02
+second: c3804f08
+--------------- 
+round 86669995: 
+first: c85b6ebe
+second: c3d96eb4
+--------------- 
+round 86689165: 
+first: c85d7aec
+second: c3df7ae6
+--------------- 
+round 88346253: 
+first: c90e79ec
+second: c28c79e6
+--------------- 
+round 88981954: 
+first: c952605f
+second: c2d06055
+--------------- 
+round 89126136: 
+first: c961c6d9
+second: c2e3c6d3
+--------------- 
+round 89496953: 
+first: c9896260
+second: c20b626a
+--------------- 
+round 89510409: 
+first: c98ad250
+second: c208d25a
+--------------- 
+round 90196174: 
+first: c9d411b3
+second: c25611b9
+--------------- 
+round 91771930: 
+first: ca7c60c7
+second: c1fe60cd
+--------------- 
+round 95758405: 
+first: cc262df4
+second: c7a42dfe
+--------------- 
+round 96213246: 
+first: cc56c303
+second: c7d4c309
+--------------- 
+round 98895406: 
+first: cd753f53
+second: c6f73f59
+--------------- 
+round 99701667: 
+first: cdcb5d86
+second: c6495d8c
+--------------- 
+round 99883739: 
+first: cdded00e
+second: c65cd004
+--------------- 
+round 101531616: 
+first: ce8ed331
+second: c50cd33b
+--------------- 
+round 102678823: 
+first: cf095c22
+second: c48b5c28
+--------------- 
+round 107244406: 
+first: d0f1044b
+second: db730441
+--------------- 
+round 107304612: 
+first: d0f7728d
+second: db757287
+--------------- 
+round 108595309: 
+first: d1814f0c
+second: da034f06
+--------------- 
+round 109757545: 
+first: d1fd72f0
+second: da7f72fa
+--------------- 
+round 110228208: 
+first: d22fb8a1
+second: d9adb8ab
+--------------- 
+round 111688649: 
+first: d2cbb690
+second: d949b69a
+--------------- 
+round 112178962: 
+first: d300158f
+second: d8821585
+--------------- 
+round 112586344: 
+first: d32b98e9
+second: d8a998e3
+--------------- 
+round 112772205: 
+first: d33f730c
+second: d8bd7306
+--------------- 
+round 112954042: 
+first: d352df27
+second: d8d0df2d
+--------------- 
+round 114114082: 
+first: d3cec6ff
+second: d84cc6f5
+--------------- 
+round 115083425: 
+first: d4365078
+second: dfb45072
+--------------- 
+round 116793397: 
+first: d4ecf584
+second: df6ef58e
+--------------- 
+round 117875418: 
+first: d5608807
+second: dee2880d
+--------------- 
+round 117930724: 
+first: d566704d
+second: dee47047
+--------------- 
+round 120016178: 
+first: d645306f
+second: ddc73065
+--------------- 
+round 120526181: 
+first: d67ba9d4
+second: ddf9a9de
+--------------- 
+round 120893196: 
+first: d6a2dd65
+second: dd20dd6f
+--------------- 
+round 121590938: 
+first: d6ed6447
+second: dd6f644d
+--------------- 
+round 123434485: 
+first: d7b24dc4
+second: dc304dce
+--------------- 
+round 124367667: 
+first: d815fa76
+second: d397fa7c
+--------------- 
+round 125599412: 
+first: d8998afd
+second: d31b8af7
+--------------- 
+round 126264645: 
+first: d8e098f4
+second: d36298fe
+--------------- 
+round 126334396: 
+first: d8e80c35
+second: d36a0c3f
+--------------- 
+round 126888503: 
+first: d9233b92
+second: d2a13b98
+--------------- 
+round 127345137: 
+first: d95401a8
+second: d2d601a2
+--------------- 
+round 128232684: 
+first: d9b2ce85
+second: d230ce8f
+--------------- 
+round 129239105: 
+first: da1e4dd8
+second: d19c4dd2
+--------------- 
+round 130751639: 
+first: dabfdc32
+second: d13ddc38
+--------------- 
+round 130768579: 
+first: dac1ab66
+second: d143ab6c
+--------------- 
+round 132888334: 
+first: dba41573
+second: d0261579
+--------------- 
+round 133817900: 
+first: dc075f45
+second: d7855f4f
+--------------- 
+round 134201115: 
+first: dc304dce
+second: d7b24dc4
+--------------- 
+round 134664780: 
+first: dc61d425
+second: d7e3d42f
+--------------- 
+round 139512661: 
+first: de67a364
+second: d5e5a36e
+--------------- 
+round 139658074: 
+first: de772b87
+second: d5f52b8d
+--------------- 
+round 139884269: 
+first: de8f548c
+second: d50d5486
+--------------- 
+round 141977947: 
+first: df6ef58e
+second: d4ecf584
+--------------- 
+round 143026023: 
+first: dfdee7e2
+second: d45ce7e8
+--------------- 
+round 146470597: 
+first: e14ed374
+second: eaccd37e
+--------------- 
+round 146863912: 
+first: e178d629
+second: eafad623
+--------------- 
+round 147452913: 
+first: e1b7bfa8
+second: ea35bfa2
+--------------- 
+round 147460045: 
+first: e1b882ac
+second: ea3a82a6
+--------------- 
+round 147744835: 
+first: e1d6ede6
+second: ea54edec
+--------------- 
+round 148358719: 
+first: e2187fca
+second: e99a7fc0
+--------------- 
+round 149479510: 
+first: e290366b
+second: e9123661
+--------------- 
+round 149902396: 
+first: e2bd61b5
+second: e93f61bf
+--------------- 
+round 151347138: 
+first: e357b25f
+second: e8d5b255
+--------------- 
+round 155134200: 
+first: e4ec32d9
+second: ef6e32d3
+--------------- 
+round 155597863: 
+first: e51db922
+second: ee9fb928
+--------------- 
+round 156167866: 
+first: e55a9b27
+second: eed89b2d
+--------------- 
+round 157638141: 
+first: e5f7a5fc
+second: ee75a5f6
+--------------- 
+round 158834156: 
+first: e6776585
+second: edf5658f
+--------------- 
+round 159093657: 
+first: e6931d40
+second: ed111d4a
+--------------- 
+round 160875731: 
+first: e75175d6
+second: ecd375dc
+--------------- 
+round 161437317: 
+first: e78d71b4
+second: ec0f71be
+--------------- 
+round 162116651: 
+first: e7d6013e
+second: ec540134
+--------------- 
+round 162846304: 
+first: e823f0b1
+second: e3a1f0bb
+--------------- 
+round 163451412: 
+first: e864929d
+second: e3e69297
+--------------- 
+round 165474504: 
+first: e93ca989
+second: e2bea983
+--------------- 
+round 166305818: 
+first: e99574c7
+second: e21774cd
+--------------- 
+round 168098445: 
+first: ea54edec
+second: e1d6ede6
+--------------- 
+round 168591156: 
+first: ea898e7d
+second: e10b8e77
+--------------- 
+round 170060469: 
+first: eb267f04
+second: e0a47f0e
+--------------- 
+round 170265534: 
+first: eb3c6643
+second: e0be6649
+--------------- 
+round 170288473: 
+first: eb3ed980
+second: e0bcd98a
+--------------- 
+round 171441420: 
+first: ebb9ff65
+second: e03bff6f
+--------------- 
+round 172850323: 
+first: ec507c16
+second: e7d27c1c
+--------------- 
+round 173566581: 
+first: ec9cfd44
+second: e71efd4e
+--------------- 
+round 173614705: 
+first: eca22128
+second: e7202122
+--------------- 
+round 173930736: 
+first: ecc3e2a1
+second: e741e2ab
+--------------- 
+round 174514377: 
+first: ed023990
+second: e680399a
+--------------- 
+round 175449355: 
+first: ed66175e
+second: e6e41754
+--------------- 
+round 175724707: 
+first: ed838086
+second: e601808c
+--------------- 
+round 178590089: 
+first: eeb58ed0
+second: e5378eda
+--------------- 
+round 179014698: 
+first: eee2e937
+second: e560e93d
+--------------- 
+round 179431226: 
+first: ef0f66a7
+second: e48d66ad
+--------------- 
+round 180027027: 
+first: ef4f0a16
+second: e4cd0a1c
+--------------- 
+round 180447123: 
+first: ef7be916
+second: e4f9e91c
+--------------- 
+round 182972288: 
+first: f089a091
+second: fb0ba09b
+--------------- 
+round 184602343: 
+first: f137bc62
+second: fab5bc68
+--------------- 
+round 185505218: 
+first: f1982c5f
+second: fa1a2c55
+--------------- 
+round 185530547: 
+first: f19ae0f6
+second: fa18e0fc
+--------------- 
+round 185648849: 
+first: f1a783c8
+second: fa2583c2
+--------------- 
+round 186485859: 
+first: f200eac6
+second: f982eacc
+--------------- 
+round 186712446: 
+first: f2191e83
+second: f99b1e89
+--------------- 
+round 191577802: 
+first: f420cb97
+second: ffa2cb9d
+--------------- 
+round 192393161: 
+first: f477e290
+second: fff5e29a
+--------------- 
+round 193148718: 
+first: f4c89653
+second: ff4a9659
+--------------- 
+round 193523884: 
+first: f4f0a8c5
+second: ff72a8cf
+--------------- 
+round 194003839: 
+first: f523ec8a
+second: fea1ec80
+--------------- 
+round 195512011: 
+first: f5c5039e
+second: fe470394
+--------------- 
+round 197262644: 
+first: f680007d
+second: fd020077
+--------------- 
+round 200707788: 
+first: f7effba5
+second: fc6dfbaf
+--------------- 
+round 201819688: 
+first: f866bf29
+second: f3e4bf23
+--------------- 
+round 203663407: 
+first: f92bad5a
+second: f2a9ad50
+--------------- 
+round 204480173: 
+first: f982eacc
+second: f200eac6
+--------------- 
+round 204706760: 
+first: f99b1e89
+second: f2191e83
+--------------- 
+round 205241410: 
+first: f9d439df
+second: f25639d5
+--------------- 
+round 205884157: 
+first: fa18e0fc
+second: f19ae0f6
+--------------- 
+round 206959763: 
+first: fa8bc416
+second: f109c41c
+--------------- 
+round 207197733: 
+first: faa52f14
+second: f1272f1e
+--------------- 
+round 208156838: 
+first: fb0ba09b
+second: f089a091
+--------------- 
+round 209122206: 
+first: fb72bd63
+second: f0f0bd69
+--------------- 
+round 211474418: 
+first: fc6dfbaf
+second: f7effba5
+--------------- 
+round 212367621: 
+first: fccd6334
+second: f74f633e
+--------------- 
+round 212557909: 
+first: fce1b664
+second: f763b66e
+--------------- 
+round 212666830: 
+first: fced58b3
+second: f76f58b9
+--------------- 
+round 212677151: 
+first: fcee72ea
+second: f76c72e0
+--------------- 
+round 213603229: 
+first: fd515d5c
+second: f6d35d56
+--------------- 
+round 215722464: 
+first: fe33b931
+second: f5b1b93b
+--------------- 
+round 215896445: 
+first: fe464e7c
+second: f5c44e76
+--------------- 
+round 217081633: 
+first: fec4e5f8
+second: f546e5f2
+--------------- 
+round 218708434: 
+first: ff72a8cf
+second: f4f0a8c5
+--------------- 
+round 219492337: 
+first: ffc663a8
+second: f44463a2
+--------------- 
+round 219937007: 
+first: fff5e29a
+second: f477e290
+--------------- 
+round 222062189: 
+first: d8e10c
+second: b5ae106
+--------------- 
+round 222764939: 
+first: 123f0de
+second: aa1f0d4
+--------------- 
+round 223730696: 
+first: 18b1849
+second: a091843
+--------------- 
+round 224159796: 
+first: 1b8ed7d
+second: a3aed77
+--------------- 
+round 224789247: 
+first: 1fc290a
+second: a7e2900
+--------------- 
+round 225069586: 
+first: 21a1a8f
+second: 9981a85
+--------------- 
+round 225694414: 
+first: 25cd7b3
+second: 9ded7b9
+--------------- 
+round 226136979: 
+first: 28c1d16
+second: 90e1d1c
+--------------- 
+round 226235985: 
+first: 296b048
+second: 914b042
+--------------- 
+round 227168892: 
+first: 2fa5575
+second: 978557f
+--------------- 
+round 227948464: 
+first: 34d99e1
+second: 8cf99eb
+--------------- 
+round 227966315: 
+first: 34f81fe
+second: 8cd81f4
+--------------- 
+round 228483223: 
+first: 386b832
+second: 804b838
+--------------- 
+round 230477905: 
+first: 45bc648
+second: fd9c642
+--------------- 
+round 231724687: 
+first: 4e0f1fa
+second: f62f1f0
+--------------- 
+round 231892036: 
+first: 4f2d1ed
+second: f70d1e7
+--------------- 
+round 234448908: 
+first: 603ec65
+second: d81ec6f
+--------------- 
+round 238805004: 
+first: 7d53465
+second: c57346f
+--------------- 
+round 239871596: 
+first: 8472105
+second: 3c5210f
+--------------- 
+round 241168174: 
+first: 8d19e53
+second: 3539e59
+--------------- 
+round 241295913: 
+first: 8df4330
+second: 35d433a
+--------------- 
+round 241796103: 
+first: 914b042
+second: 296b048
+--------------- 
+round 243688728: 
+first: 9ded7b9
+second: 25cd7b3
+--------------- 
+round 245126071: 
+first: a785e12
+second: 1fa5e18
+--------------- 
+round 248550237: 
+first: be61b9c
+second: 641b96
+--------------- 
+round 253685518: 
+first: e0a9d73
+second: 5889d79
+--------------- 
+round 256490200: 
+first: f362ff9
+second: 4b42ff3
+--------------- 
+round 259090544: 
+first: 104bef21
+second: 1bc9ef2b
+--------------- 
+round 261246568: 
+first: 113238e9
+second: 1ab038e3
+--------------- 
+round 261684090: 
+first: 1160f467
+second: 1ae2f46d
+--------------- 
+round 261805767: 
+first: 116df382
+second: 1aeff388
+--------------- 
+round 262969229: 
+first: 11ea38ec
+second: 1a6838e6
+--------------- 
+round 264428107: 
+first: 12860c1e
+second: 19040c14
+--------------- 
+round 264429795: 
+first: 12863a46
+second: 19043a4c
+--------------- 
+round 264894882: 
+first: 12b7e77f
+second: 1935e775
+--------------- 
+round 265004823: 
+first: 12c3a5b2
+second: 1941a5b8
+--------------- 
+round 266425972: 
+first: 135b713d
+second: 18d97137
+--------------- 
+round 268307519: 
+first: 142469ca
+second: 1fa669c0
+--------------- 
+round 270168464: 
+first: 14eb2f01
+second: 1f692f0b
+--------------- 
+round 270798801: 
+first: 152e82c8
+second: 1eac82c2
+--------------- 
+round 272722579: 
+first: 15fbfe16
+second: 1e79fe1c
+--------------- 
+round 273279726: 
+first: 16378093
+second: 1db58099
+--------------- 
+round 276659527: 
+first: 17a08102
+second: 1c228108
+--------------- 
+round 280998056: 
+first: 196fe8a9
+second: 12ede8a3
+--------------- 
+round 281565960: 
+first: 19ac9149
+second: 122e9143
+--------------- 
+round 282622128: 
+first: 1a1d60e1
+second: 119f60eb
+--------------- 
+round 282964115: 
+first: 1a41e816
+second: 11c3e81c
+--------------- 
+round 283431807: 
+first: 1a73dc8a
+second: 11f1dc80
+--------------- 
+round 285916301: 
+first: 1b7d3bec
+second: 10ff3be6
+--------------- 
+round 286094880: 
+first: 1b904ef1
+second: 10124efb
+--------------- 
+round 286634390: 
+first: 1bc9ef2b
+second: 104bef21
+--------------- 
+round 286987839: 
+first: 1befafca
+second: 106dafc0
+--------------- 
+round 287908160: 
+first: 1c51fcd1
+second: 17d3fcdb
+--------------- 
+round 288957888: 
+first: 1cc21c51
+second: 17401c5b
+--------------- 
+round 290385405: 
+first: 1d5a95fc
+second: 16d895f6
+--------------- 
+round 291591423: 
+first: 1ddb670a
+second: 16596700
+--------------- 
+round 292365739: 
+first: 1e2e1bbe
+second: 15ac1bb4
+--------------- 
+round 292882297: 
+first: 1e654860
+second: 15e7486a
+--------------- 
+round 293076189: 
+first: 1e79fe1c
+second: 15fbfe16
+--------------- 
+round 294219901: 
+first: 1ef4277c
+second: 15762776
+--------------- 
+round 294794286: 
+first: 1f318153
+second: 14b38159
+--------------- 
+round 295619795: 
+first: 1f89add6
+second: 140baddc
+--------------- 
+round 296011630: 
+first: 1fb38813
+second: 14318819
+--------------- 
+round 296493031: 
+first: 1fe6f362
+second: 1464f368
+--------------- 
+round 297007676: 
+first: 201debb5
+second: 2b9febbf
+--------------- 
+round 298781230: 
+first: 20db5b53
+second: 2b595b59
+--------------- 
+round 299030845: 
+first: 20f604bc
+second: 2b7404b6
+--------------- 
+round 299319075: 
+first: 2114ce06
+second: 2a96ce0c
+--------------- 
+round 300320286: 
+first: 217fbee3
+second: 2afdbee9
+--------------- 
+round 301207598: 
+first: 21de8553
+second: 2a5c8559
+--------------- 
+round 302697434: 
+first: 227da707
+second: 29ffa70d
+--------------- 
+round 302996124: 
+first: 229d8e55
+second: 291f8e5f
+--------------- 
+round 303896374: 
+first: 22fdb68b
+second: 297fb681
+--------------- 
+round 304297938: 
+first: 23289acf
+second: 28aa9ac5
+--------------- 
+round 304938021: 
+first: 236cf914
+second: 28eef91e
+--------------- 
+round 305511482: 
+first: 23aa39a7
+second: 282839ad
+--------------- 
+round 306319587: 
+first: 24008a46
+second: 2f828a4c
+--------------- 
+round 306548318: 
+first: 2418f8a3
+second: 2f9af8a9
+--------------- 
+round 307156393: 
+first: 2459ebb0
+second: 2fdbebba
+--------------- 
+round 307477909: 
+first: 247c4324
+second: 2ffe432e
+--------------- 
+round 307586285: 
+first: 2487d68c
+second: 2f05d686
+--------------- 
+round 307786332: 
+first: 249d3495
+second: 2f1f349f
+--------------- 
+round 308242011: 
+first: 24cde08e
+second: 2f4fe084
+--------------- 
+round 308273417: 
+first: 24d13b50
+second: 2f533b5a
+--------------- 
+round 310536673: 
+first: 25c2f938
+second: 2e40f932
+--------------- 
+round 310882074: 
+first: 25e7ddc7
+second: 2e65ddcd
+--------------- 
+round 311299722: 
+first: 261479d7
+second: 2d9679dd
+--------------- 
+round 311942167: 
+first: 265918b2
+second: 2ddb18b8
+--------------- 
+round 312859276: 
+first: 26bb0de5
+second: 2d390def
+--------------- 
+round 313218912: 
+first: 26e177b1
+second: 2d6377bb
+--------------- 
+round 313380467: 
+first: 26f2b936
+second: 2d70b93c
+--------------- 
+round 314926276: 
+first: 2797d56d
+second: 2c15d567
+--------------- 
+round 315077968: 
+first: 27a80941
+second: 2c2a094b
+--------------- 
+round 317312710: 
+first: 2896bb7b
+second: 2314bb71
+--------------- 
+round 319751643: 
+first: 299b3d0e
+second: 22193d04
+--------------- 
+round 320070944: 
+first: 29bd57f1
+second: 223f57fb
+--------------- 
+round 320144046: 
+first: 29c526d3
+second: 224726d9
+--------------- 
+round 320691748: 
+first: 29ffa70d
+second: 227da707
+--------------- 
+round 321280759: 
+first: 2a3e90d2
+second: 21bc90d8
+--------------- 
+round 321561208: 
+first: 2a5c8559
+second: 21de8553
+--------------- 
+round 321702391: 
+first: 2a6b99d2
+second: 21e999d8
+--------------- 
+round 322728741: 
+first: 2ad93a14
+second: 215b3a1e
+--------------- 
+round 326816137: 
+first: 2c8dced0
+second: 270fceda
+--------------- 
+round 327143662: 
+first: 2cb0ca93
+second: 2732ca99
+--------------- 
+round 328074105: 
+first: 2d142c60
+second: 26962c6a
+--------------- 
+round 328727956: 
+first: 2d5a031d
+second: 26d80317
+--------------- 
+round 328823135: 
+first: 2d642daa
+second: 26e62da0
+--------------- 
+round 329023572: 
+first: 2d79965d
+second: 26fb9657
+--------------- 
+round 329294036: 
+first: 2d9679dd
+second: 261479d7
+--------------- 
+round 329620368: 
+first: 2db95501
+second: 263b550b
+--------------- 
+round 329936481: 
+first: 2ddb18b8
+second: 265918b2
+--------------- 
+round 330812035: 
+first: 2e389da6
+second: 25ba9dac
+--------------- 
+round 331235684: 
+first: 2e65ddcd
+second: 25e7ddc7
+--------------- 
+round 331443503: 
+first: 2e7c105a
+second: 25fe1050
+--------------- 
+round 332970882: 
+first: 2f1f349f
+second: 249d3495
+--------------- 
+round 333457967: 
+first: 2f533b5a
+second: 24d13b50
+--------------- 
+round 334152721: 
+first: 2f9d7088
+second: 241f7082
+--------------- 
+round 334244245: 
+first: 2fa73724
+second: 2425372e
+--------------- 
+round 335197556: 
+first: 300d0a3d
+second: 3b8f0a37
+--------------- 
+round 337221770: 
+first: 30e53fd7
+second: 3b673fdd
+--------------- 
+round 339039962: 
+first: 31a77407
+second: 3a25740d
+--------------- 
+round 339145397: 
+first: 31b2b704
+second: 3a30b70e
+--------------- 
+round 339625313: 
+first: 31e5f9b8
+second: 3a67f9b2
+--------------- 
+round 339661281: 
+first: 31e9d138
+second: 3a6bd132
+--------------- 
+round 339958660: 
+first: 320994ad
+second: 398b94a7
+--------------- 
+round 340802795: 
+first: 3263be7e
+second: 39e1be74
+--------------- 
+round 341599788: 
+first: 32b8df45
+second: 393adf4f
+--------------- 
+round 341948986: 
+first: 32de2ba7
+second: 395c2bad
+--------------- 
+round 342583399: 
+first: 3321eee2
+second: 38a3eee8
+--------------- 
+round 343877401: 
+first: 33ac25c0
+second: 382e25ca
+--------------- 
+round 343892991: 
+first: 33add00a
+second: 382fd000
+--------------- 
+round 344977214: 
+first: 34219ec3
+second: 3fa39ec9
+--------------- 
+round 346765529: 
+first: 34e0a200
+second: 3f62a20a
+--------------- 
+round 351029003: 
+first: 36a8055e
+second: 3d2a0554
+--------------- 
+round 357512130: 
+first: 395c7e5f
+second: 32de7e55
+--------------- 
+round 357529157: 
+first: 395e4ff4
+second: 32dc4ffe
+--------------- 
+round 359393572: 
+first: 3a25740d
+second: 31a77407
+--------------- 
+round 359926442: 
+first: 3a5e5eb7
+second: 31dc5ebd
+--------------- 
+round 363045762: 
+first: 3bab8c9f
+second: 30298c95
+--------------- 
+round 364055506: 
+first: 3c1766cf
+second: 379566c5
+--------------- 
+round 367246744: 
+first: 3d6c4339
+second: 36ee4333
+--------------- 
+round 368925268: 
+first: 3e1f8c5d
+second: 359d8c57
+--------------- 
+round 371950079: 
+first: 3f62a20a
+second: 34e0a200
+--------------- 
+round 373183461: 
+first: 3fe65f54
+second: 34645f5e
+--------------- 
+round 376261056: 
+first: 412f1851
+second: 4aad185b
+--------------- 
+round 377722776: 
+first: 41cb3939
+second: 4a493933
+--------------- 
+round 377837011: 
+first: 41d76cd6
+second: 4a556cdc
+--------------- 
+round 380009976: 
+first: 42bf85d9
+second: 493d85d3
+--------------- 
+round 380407386: 
+first: 42e9f887
+second: 496bf88d
+--------------- 
+round 380412855: 
+first: 42ea8e12
+second: 49688e18
+--------------- 
+round 380496879: 
+first: 42f3879a
+second: 49718790
+--------------- 
+round 382497903: 
+first: 43c9431a
+second: 484b4310
+--------------- 
+round 382589403: 
+first: 43d3090e
+second: 48510904
+--------------- 
+round 384535998: 
+first: 44a2f443
+second: 4f20f449
+--------------- 
+round 384565766: 
+first: 44a6223b
+second: 4f242231
+--------------- 
+round 385159113: 
+first: 44e58290
+second: 4f67829a
+--------------- 
+round 386047383: 
+first: 45446332
+second: 4ec66338
+--------------- 
+round 387020356: 
+first: 45ac4fed
+second: 4e2e4fe7
+--------------- 
+round 388100584: 
+first: 461fb169
+second: 4d9db163
+--------------- 
+round 390765250: 
+first: 473c4f5f
+second: 4cbe4f55
+--------------- 
+round 391723338: 
+first: 47a2a517
+second: 4c20a51d
+--------------- 
+round 392952058: 
+first: 4825e2e7
+second: 43a7e2ed
+--------------- 
+round 393464996: 
+first: 485cac8d
+second: 43deac87
+--------------- 
+round 393622915: 
+first: 486d8aa6
+second: 43ef8aac
+--------------- 
+round 394507428: 
+first: 48cc048d
+second: 434e0487
+--------------- 
+round 395570094: 
+first: 493d85d3
+second: 42bf85d9
+--------------- 
+round 398190621: 
+first: 4a556cdc
+second: 41d76cd6
+--------------- 
+round 399259412: 
+first: 4ac7959d
+second: 41459597
+--------------- 
+round 399318393: 
+first: 4acde260
+second: 414fe26a
+--------------- 
+round 400186851: 
+first: 4b2aa546
+second: 40a8a54c
+--------------- 
+round 401671765: 
+first: 4bc94064
+second: 404b406e
+--------------- 
+round 401766088: 
+first: 4bd35389
+second: 40515383
+--------------- 
+round 402806772: 
+first: 4c427bbd
+second: 47c07bb7
+--------------- 
+round 404312713: 
+first: 4ce355d0
+second: 476155da
+--------------- 
+round 404465503: 
+first: 4cf3a7aa
+second: 4771a7a0
+--------------- 
+round 405250598: 
+first: 4d47831b
+second: 46c58311
+--------------- 
+round 405277439: 
+first: 4d4a610a
+second: 46c86100
+--------------- 
+round 406488073: 
+first: 4dcbb050
+second: 4649b05a
+--------------- 
+round 407414684: 
+first: 4e2ea955
+second: 45aca95f
+--------------- 
+round 409712864: 
+first: 4f242231
+second: 44a6223b
+--------------- 
+round 409745440: 
+first: 4f279cf1
+second: 44a59cfb
+--------------- 
+round 410343663: 
+first: 4f67829a
+second: 44e58290
+--------------- 
+round 410627373: 
+first: 4f85d04c
+second: 4407d046
+--------------- 
+round 410775277: 
+first: 4f959c8c
+second: 44179c86
+--------------- 
+round 412144804: 
+first: 5027e48d
+second: 5ba5e487
+--------------- 
+round 414791325: 
+first: 5142925c
+second: 5ac09256
+--------------- 
+round 415581752: 
+first: 5196ff99
+second: 5a14ff93
+--------------- 
+round 418822816: 
+first: 52f12e71
+second: 59732e7b
+--------------- 
+round 418899851: 
+first: 52f968de
+second: 597b68d4
+--------------- 
+round 419958755: 
+first: 536a8346
+second: 58e8834c
+--------------- 
+round 421736106: 
+first: 54285ab7
+second: 5faa5abd
+--------------- 
+round 422076202: 
+first: 544cae37
+second: 5fceae3d
+--------------- 
+round 422591945: 
+first: 5483c490
+second: 5f01c49a
+--------------- 
+round 423368676: 
+first: 54d6bb4d
+second: 5f54bb47
+--------------- 
+round 425037275: 
+first: 5588f50e
+second: 5e0af504
+--------------- 
+round 425670881: 
+first: 55cca238
+second: 5e4ea232
+--------------- 
+round 427765099: 
+first: 56ac51fe
+second: 5d2e51f4
+--------------- 
+round 428047432: 
+first: 56ca7a09
+second: 5d487a03
+--------------- 
+round 431219045: 
+first: 581d3dd4
+second: 539f3dde
+--------------- 
+round 431365370: 
+first: 582cdee7
+second: 53aedeed
+--------------- 
+round 432829423: 
+first: 58c93f9a
+second: 534b3f90
+--------------- 
+round 433495846: 
+first: 59106e1b
+second: 52926e11
+--------------- 
+round 434344784: 
+first: 596b1b41
+second: 52e91b4b
+--------------- 
+round 434923870: 
+first: 59a8f5a3
+second: 522af5a9
+--------------- 
+round 435792137: 
+first: 5a05b350
+second: 5187b35a
+--------------- 
+round 436231599: 
+first: 5a34a3da
+second: 51b6a3d0
+--------------- 
+round 437638573: 
+first: 5acaebcc
+second: 5148ebc6
+--------------- 
+round 438096550: 
+first: 5afbd69b
+second: 5179d691
+--------------- 
+round 439774486: 
+first: 5baf0fab
+second: 502d0fa1
+--------------- 
+round 441465378: 
+first: 5c63aaff
+second: 57e1aaf5
+--------------- 
+round 442411140: 
+first: 5cc8afad
+second: 574aafa7
+--------------- 
+round 443428849: 
+first: 5d3563a8
+second: 56b763a2
+--------------- 
+round 443607550: 
+first: 5d487a03
+second: 56ca7a09
+--------------- 
+round 444551947: 
+first: 5dad595e
+second: 562f5954
+--------------- 
+round 445552722: 
+first: 5e183e4f
+second: 559a3e45
+--------------- 
+round 446181313: 
+first: 5e5b6258
+second: 55d96252
+--------------- 
+round 449520228: 
+first: 5fc004cd
+second: 544204c7
+--------------- 
+round 450552215: 
+first: 602e3f32
+second: 6bac3f38
+--------------- 
+round 453826113: 
+first: 618befd8
+second: 6a09efd2
+--------------- 
+round 454349865: 
+first: 61c3e130
+second: 6a41e13a
+--------------- 
+round 454869888: 
+first: 61fb6c91
+second: 6a796c9b
+--------------- 
+round 455069432: 
+first: 6210bcd9
+second: 6992bcd3
+--------------- 
+round 456263135: 
+first: 62903d2a
+second: 69123d20
+--------------- 
+round 458901554: 
+first: 63aa0d6f
+second: 68280d65
+--------------- 
+round 459228944: 
+first: 63cd0581
+second: 684f058b
+--------------- 
+round 459240733: 
+first: 63ce47dc
+second: 684c47d6
+--------------- 
+round 459537887: 
+first: 63ee052a
+second: 686c0520
+--------------- 
+round 461740428: 
+first: 64d946e5
+second: 6f5b46ef
+--------------- 
+round 464195516: 
+first: 65df8235
+second: 6e5d823f
+--------------- 
+round 464721939: 
+first: 6617bc96
+second: 6d95bc9c
+--------------- 
+round 466768938: 
+first: 66f26137
+second: 6d70613d
+--------------- 
+round 468774535: 
+first: 67c899c2
+second: 6c4a99c8
+--------------- 
+round 469885731: 
+first: 683f4a06
+second: 63bd4a0c
+--------------- 
+round 470537481: 
+first: 6884e750
+second: 6306e75a
+--------------- 
+round 470625744: 
+first: 688e54c1
+second: 630c54cb
+--------------- 
+round 471320141: 
+first: 68d8802c
+second: 635a8026
+--------------- 
+round 472261908: 
+first: 693d179d
+second: 62bf1797
+--------------- 
+round 473986968: 
+first: 69f55939
+second: 62775933
+--------------- 
+round 474945768: 
+first: 6a5bc269
+second: 61d9c263
+--------------- 
+round 475415678: 
+first: 6a8df383
+second: 610ff389
+--------------- 
+round 476001292: 
+first: 6acc8065
+second: 614e806f
+--------------- 
+round 477992963: 
+first: 6ba13c26
+second: 60233c2c
+--------------- 
+round 479271658: 
+first: 6c29d077
+second: 67abd07d
+--------------- 
+round 481075880: 
+first: 6cea86a9
+second: 676886a3
+--------------- 
+round 482006559: 
+first: 6d4deeea
+second: 66cfeee0
+--------------- 
+round 484085333: 
+first: 6e2bf864
+second: 65a9f86e
+--------------- 
+round 485853242: 
+first: 6ee8cda7
+second: 656acdad
+--------------- 
+round 486760078: 
+first: 6f49a9f3
+second: 64cba9f9
+--------------- 
+round 486924978: 
+first: 6f5b46ef
+second: 64d946e5
+--------------- 
+round 488505470: 
+first: 70041783
+second: 7b861789
+--------------- 
+round 490191955: 
+first: 70b83a56
+second: 7b3a3a5c
+--------------- 
+round 491466839: 
+first: 71406672
+second: 7ac26678
+--------------- 
+round 492656818: 
+first: 71bf80ef
+second: 7a3d80e5
+--------------- 
+round 493288734: 
+first: 7202ffe3
+second: 7980ffe9
+--------------- 
+round 493760409: 
+first: 72356140
+second: 79b7614a
+--------------- 
+round 493976957: 
+first: 724c827c
+second: 79ce8276
+--------------- 
+round 494839401: 
+first: 72a8a0f0
+second: 792aa0fa
+--------------- 
+round 496951076: 
+first: 738a2e0d
+second: 78082e07
+--------------- 
+round 497198599: 
+first: 73a49e42
+second: 78269e48
+--------------- 
+round 497542640: 
+first: 73c95da1
+second: 784b5dab
+--------------- 
+round 497924155: 
+first: 73f21dae
+second: 78701da4
+--------------- 
+round 499541168: 
+first: 749ed4e1
+second: 7f1cd4eb
+--------------- 
+round 499662294: 
+first: 74abc4eb
+second: 7f29c4e1
+--------------- 
+round 499693697: 
+first: 74af1f98
+second: 7f2d1f92
+--------------- 
+round 500212226: 
+first: 74e6821f
+second: 7f648215
+--------------- 
+round 501191943: 
+first: 754f2742
+second: 7ecd2748
+--------------- 
+round 502823164: 
+first: 75fd62f5
+second: 7e7f62ff
+--------------- 
+round 503399371: 
+first: 763aee9e
+second: 7db8ee94
+--------------- 
+round 509356648: 
+first: 78b73ce9
+second: 73353ce3
+--------------- 
+round 509413915: 
+first: 78bd5ace
+second: 733f5ac4
+--------------- 
+round 509755491: 
+first: 78e1d6c6
+second: 7363d6cc
+--------------- 
+round 510250556: 
+first: 7916b7b5
+second: 7294b7bf
+--------------- 
+round 512410580: 
+first: 79fd6edd
+second: 727f6ed7
+--------------- 
+round 512675715: 
+first: 7a19c0a6
+second: 719bc0ac
+--------------- 
+round 513172313: 
+first: 7a4ecb80
+second: 71cccb8a
+--------------- 
+round 513798536: 
+first: 7a91aec9
+second: 7113aec3
+--------------- 
+round 513865217: 
+first: 7a98ce18
+second: 711ace12
+--------------- 
+round 515499381: 
+first: 7b475a44
+second: 70c55a4e
+--------------- 
+round 515718169: 
+first: 7b5eb8c0
+second: 70dcb8ca
+--------------- 
+round 517401017: 
+first: 7c127820
+second: 7790782a
+--------------- 
+round 517854433: 
+first: 7c42e638
+second: 77c0e632
+--------------- 
+round 518867973: 
+first: 7caf2834
+second: 772d283e
+--------------- 
+round 522015609: 
+first: 7dff5c60
+second: 767d5c6a
+--------------- 
+round 522358589: 
+first: 7e23febc
+second: 75a1feb6
+--------------- 
+round 522649917: 
+first: 7e431cbc
+second: 75c11cb6
+--------------- 
+round 523737547: 
+first: 7eb7489e
+second: 75354894
+--------------- 
+round 524542879: 
+first: 7f0d4d6a
+second: 748f4d60
+--------------- 
+round 524809392: 
+first: 7f29c4e1
+second: 74abc4eb
+--------------- 
+round 525359324: 
+first: 7f648215
+second: 74e6821f
+--------------- 
+round 527619481: 
+first: 8055eb40
+second: 8bd7eb4a
+--------------- 
+round 528539546: 
+first: 80b83147
+second: 8b3a314d
+--------------- 
+round 528920997: 
+first: 80e0ef94
+second: 8b62ef9e
+--------------- 
+round 529328421: 
+first: 810c7414
+second: 8a8e741e
+--------------- 
+round 529578520: 
+first: 81272ab9
+second: 8aa52ab3
+--------------- 
+round 530121080: 
+first: 81611e59
+second: 8ae31e53
+--------------- 
+round 531629290: 
+first: 82023677
+second: 8980367d
+--------------- 
+round 531980180: 
+first: 8227b11d
+second: 89a5b117
+--------------- 
+round 534407260: 
+first: 832aee95
+second: 88a8ee9f
+--------------- 
+round 536240503: 
+first: 83eebe52
+second: 886cbe58
+--------------- 
+round 536331937: 
+first: 83f88278
+second: 887a8272
+--------------- 
+round 537347938: 
+first: 846507bf
+second: 8fe707b5
+--------------- 
+round 537609907: 
+first: 848102f6
+second: 8f0302fc
+--------------- 
+round 538994202: 
+first: 8514dec7
+second: 8e96decd
+--------------- 
+round 539673225: 
+first: 855d65d0
+second: 8edf65da
+--------------- 
+round 542495146: 
+first: 868acfb7
+second: 8d08cfbd
+--------------- 
+round 542899701: 
+first: 86b605c4
+second: 8d3405ce
+--------------- 
+round 542925201: 
+first: 86b8bf08
+second: 8d3abf02
+--------------- 
+round 544761894: 
+first: 877ced1b
+second: 8cfeed11
+--------------- 
+round 546645275: 
+first: 884617ce
+second: 83c417c4
+--------------- 
+round 547728161: 
+first: 88b9c1f8
+second: 833bc1f2
+--------------- 
+round 548742084: 
+first: 89260e6d
+second: 82a40e67
+--------------- 
+round 548766596: 
+first: 8928acad
+second: 82aaaca7
+--------------- 
+round 550414521: 
+first: 89d8b120
+second: 825ab12a
+--------------- 
+round 551024687: 
+first: 8a19dd5a
+second: 819bdd50
+--------------- 
+round 551781106: 
+first: 8a6aa8af
+second: 81e8a8a5
+--------------- 
+round 552084990: 
+first: 8a8b1e03
+second: 81091e09
+--------------- 
+round 554105547: 
+first: 8b62ef9e
+second: 80e0ef94
+--------------- 
+round 554604465: 
+first: 8b9839e8
+second: 801a39e2
+--------------- 
+round 555352900: 
+first: 8be82aed
+second: 806a2ae7
+--------------- 
+round 561920356: 
+first: 8ea5a5cd
+second: 8527a5c7
+--------------- 
+round 563616244: 
+first: 8f5ac9bd
+second: 84d8c9b7
+--------------- 
+round 564113268: 
+first: 8f8fe03d
+second: 840de037
+--------------- 
+round 564525793: 
+first: 8fbbf038
+second: 8439f032
+--------------- 
+round 565562242: 
+first: 902aa49f
+second: 9ba8a495
+--------------- 
+round 566581540: 
+first: 9097840d
+second: 9b158407
+--------------- 
+round 567008644: 
+first: 90c522ad
+second: 9b4722a7
+--------------- 
+round 567370687: 
+first: 90ebce4a
+second: 9b69ce40
+--------------- 
+round 567607448: 
+first: 91051839
+second: 9a871833
+--------------- 
+round 568802001: 
+first: 9184afc8
+second: 9a06afc2
+--------------- 
+round 570050475: 
+first: 920a09be
+second: 998809b4
+--------------- 
+round 572349275: 
+first: 92ff938e
+second: 997d9384
+--------------- 
+round 573004000: 
+first: 93458231
+second: 98c7823b
+--------------- 
+round 573989222: 
+first: 93aebddb
+second: 982cbdd1
+--------------- 
+round 574927806: 
+first: 9412fe43
+second: 9f90fe49
+--------------- 
+round 576070094: 
+first: 948d00b3
+second: 9f0f00b9
+--------------- 
+round 576371806: 
+first: 94ad3aa3
+second: 9f2f3aa9
+--------------- 
+round 576664306: 
+first: 94cc78af
+second: 9f4e78a5
+--------------- 
+round 579644222: 
+first: 960ac2c3
+second: 9d88c2c9
+--------------- 
+round 582815442: 
+first: 975d7bcf
+second: 9cdf7bc5
+--------------- 
+round 583743676: 
+first: 97c0a135
+second: 9c42a13f
+--------------- 
+round 584156739: 
+first: 97ecbfe6
+second: 9c6ebfec
+--------------- 
+round 584323064: 
+first: 97fe83d9
+second: 9c7c83d3
+--------------- 
+round 586481265: 
+first: 98e50928
+second: 93670922
+--------------- 
+round 588342346: 
+first: 99abd217
+second: 9229d21d
+--------------- 
+round 589607810: 
+first: 9a32fc9f
+second: 91b0fc95
+--------------- 
+round 589811244: 
+first: 9a48b745
+second: 91cab74f
+--------------- 
+round 591649071: 
+first: 9b0d045a
+second: 908f0450
+--------------- 
+round 591856474: 
+first: 9b232b87
+second: 90a12b8d
+--------------- 
+round 592517785: 
+first: 9b69ce40
+second: 90ebce4a
+--------------- 
+round 594578764: 
+first: 9c45f125
+second: 97c7f12f
+--------------- 
+round 596023260: 
+first: 9ce03b15
+second: 97623b1f
+--------------- 
+round 597897176: 
+first: 9da862f9
+second: 962a62f3
+--------------- 
+round 600125656: 
+first: 9e9669f9
+second: 951469f3
+--------------- 
+round 600765099: 
+first: 9edab6be
+second: 9558b6b4
+--------------- 
+round 607498404: 
+first: a1a9e88d
+second: aa2be887
+--------------- 
+round 608308158: 
+first: a2006643
+second: a9826649
+--------------- 
+round 609307890: 
+first: a26b2eaf
+second: a9e92ea5
+--------------- 
+round 614813998: 
+first: a4b74c53
+second: af354c59
+--------------- 
+round 615245602: 
+first: a4e565ff
+second: af6765f5
+--------------- 
+round 616014104: 
+first: a5377bb9
+second: aeb57bb3
+--------------- 
+round 616543397: 
+first: a5700494
+second: aef2049e
+--------------- 
+round 618002016: 
+first: a60bd0b1
+second: ad89d0bb
+--------------- 
+round 618047342: 
+first: a610a813
+second: ad92a819
+--------------- 
+round 618606879: 
+first: a64c6bea
+second: adce6be0
+--------------- 
+round 619067280: 
+first: a67d9901
+second: adff990b
+--------------- 
+round 620433748: 
+first: a70f8d5d
+second: ac8d8d57
+--------------- 
+round 621846776: 
+first: a7a67ad9
+second: ac247ad3
+--------------- 
+round 622476927: 
+first: a7e9c98a
+second: ac6bc980
+--------------- 
+round 623233881: 
+first: a83aa380
+second: a3b8a38a
+--------------- 
+round 623474993: 
+first: a8546468
+second: a3d66462
+--------------- 
+round 624380121: 
+first: a8b51200
+second: a337120a
+--------------- 
+round 626302472: 
+first: a9826649
+second: a2006643
+--------------- 
+round 626499599: 
+first: a997747a
+second: a2157470
+--------------- 
+round 629343139: 
+first: aac72d86
+second: a1452d8c
+--------------- 
+round 631436727: 
+first: aba6cc12
+second: a024cc18
+--------------- 
+round 631945604: 
+first: abdd26ad
+second: a05f26a7
+--------------- 
+round 632975418: 
+first: ac4b25a7
+second: a7c925ad
+--------------- 
+round 636041656: 
+first: ad92a819
+second: a610a813
+--------------- 
+round 638480906: 
+first: ae973257
+second: a515325d
+--------------- 
+round 641551932: 
+first: afdf37b5
+second: a45d37bf
+--------------- 
+round 641706408: 
+first: afefb7a9
+second: a46db7a3
+--------------- 
+round 642583194: 
+first: b04d5e47
+second: bbcf5e4d
+--------------- 
+round 643329147: 
+first: b09d0b6e
+second: bb1f0b64
+--------------- 
+round 645447466: 
+first: b17f4e37
+second: bafd4e3d
+--------------- 
+round 646127513: 
+first: b1c7f140
+second: ba45f14a
+--------------- 
+round 646186728: 
+first: b1ce4469
+second: ba4c4463
+--------------- 
+round 646262976: 
+first: b1d66951
+second: ba54695b
+--------------- 
+round 647125305: 
+first: b23284a0
+second: b9b084aa
+--------------- 
+round 648384162: 
+first: b2b8fa7f
+second: b93afa75
+--------------- 
+round 654999486: 
+first: b57b9243
+second: bef99249
+--------------- 
+round 655013081: 
+first: b57d0600
+second: beff060a
+--------------- 
+round 656505990: 
+first: b61c7bbb
+second: bd9e7bb1
+--------------- 
+round 658353728: 
+first: b6e1d7d1
+second: bd63d7db
+--------------- 
+round 659446533: 
+first: b7569134
+second: bcd4913e
+--------------- 
+round 659503684: 
+first: b75cabed
+second: bcdeabe7
+--------------- 
+round 660237798: 
+first: b7ab155b
+second: bc291551
+--------------- 
+round 660608711: 
+first: b7d2b382
+second: bc50b388
+--------------- 
+round 660679084: 
+first: b7da37c5
+second: bc5837cf
+--------------- 
+round 661400473: 
+first: b8274540
+second: b3a5454a
+--------------- 
+round 662653472: 
+first: b8ad1af1
+second: b32f1afb
+--------------- 
+round 663453425: 
+first: b9028ca8
+second: b2808ca2
+--------------- 
+round 664957061: 
+first: b9a327b4
+second: b22127be
+--------------- 
+round 665225045: 
+first: b9bfc764
+second: b23dc76e
+--------------- 
+round 665791978: 
+first: b9fc5577
+second: b27e557d
+--------------- 
+round 666496672: 
+first: ba479a71
+second: b1c59a7b
+--------------- 
+round 667916321: 
+first: badf3cf8
+second: b15d3cf2
+--------------- 
+round 668562586: 
+first: bb244447
+second: b0a6444d
+--------------- 
+round 670675261: 
+first: bc05ecbc
+second: b787ecb6
+--------------- 
+round 671445714: 
+first: bc5837cf
+second: b7da37c5
+--------------- 
+round 672389466: 
+first: bcbd0587
+second: b73f058d
+--------------- 
+round 672704506: 
+first: bcdeabe7
+second: b75cabed
+--------------- 
+round 673497170: 
+first: bd33564f
+second: b6b15645
+--------------- 
+round 676512395: 
+first: be7565de
+second: b5f765d4
+--------------- 
+round 676536420: 
+first: be77f6cd
+second: b5f5f6c7
+--------------- 
+round 677236667: 
+first: bec2c22e
+second: b540c224
+--------------- 
+round 681248959: 
+first: c06f514a
+second: cbed5140
+--------------- 
+round 682008253: 
+first: c0c06b3c
+second: cb426b36
+--------------- 
+round 682548374: 
+first: c0fa1c2b
+second: cb781c21
+--------------- 
+round 682671341: 
+first: c1073e8c
+second: ca853e86
+--------------- 
+round 682750939: 
+first: c10fbf0e
+second: ca8dbf04
+--------------- 
+round 683568496: 
+first: c1671221
+second: cae5122b
+--------------- 
+round 684641175: 
+first: c1d9a532
+second: ca5ba538
+--------------- 
+round 685106847: 
+first: c20b626a
+second: c9896260
+--------------- 
+round 686388421: 
+first: c2944574
+second: c916457e
+--------------- 
+round 687732818: 
+first: c323de4f
+second: c8a1de45
+--------------- 
+round 688061417: 
+first: c346f770
+second: c8c4f77a
+--------------- 
+round 688233550: 
+first: c3595a33
+second: c8db5a39
+--------------- 
+round 688819823: 
+first: c397f91a
+second: c815f910
+--------------- 
+round 689589735: 
+first: c3ea3562
+second: c8683568
+--------------- 
+round 690529831: 
+first: c44e9f22
+second: cfcc9f28
+--------------- 
+round 691098481: 
+first: c48b5c28
+second: cf095c22
+--------------- 
+round 691197555: 
+first: c495f136
+second: cf17f13c
+--------------- 
+round 691316295: 
+first: c4a2a002
+second: cf20a008
+--------------- 
+round 691415400: 
+first: c4ad35e9
+second: cf2f35e3
+--------------- 
+round 692941090: 
+first: c5502bff
+second: ced22bf5
+--------------- 
+round 693492770: 
+first: c58b18ff
+second: ce0918f5
+--------------- 
+round 694408316: 
+first: c5ece375
+second: ce6ee37f
+--------------- 
+round 695456181: 
+first: c65cd004
+second: cdded00e
+--------------- 
+round 696557599: 
+first: c6d274ea
+second: cd5074e0
+--------------- 
+round 701885615: 
+first: c90b8cda
+second: c2898cd0
+--------------- 
+round 703185214: 
+first: c9965cc3
+second: c2145cc9
+--------------- 
+round 703962011: 
+first: c9e9554e
+second: c26b5544
+--------------- 
+round 704351283: 
+first: ca12e976
+second: c190e97c
+--------------- 
+round 704392178: 
+first: ca1747af
+second: c19547a5
+--------------- 
+round 704763752: 
+first: ca3ef7e9
+second: c1bcf7e3
+--------------- 
+round 705317036: 
+first: ca7a10c5
+second: c1f810cf
+--------------- 
+round 706236821: 
+first: cadc4f24
+second: c15e4f2e
+--------------- 
+round 707695472: 
+first: cb781c21
+second: c0fa1c2b
+--------------- 
+round 709494128: 
+first: cc383a21
+second: c7ba3a2b
+--------------- 
+round 709709918: 
+first: cc4f46a3
+second: c7cd46a9
+--------------- 
+round 710801839: 
+first: ccc3e7da
+second: c741e7d0
+--------------- 
+round 711048636: 
+first: ccde4435
+second: c75c443f
+--------------- 
+round 714462161: 
+first: ce4adec8
+second: c5c8dec2
+--------------- 
+round 715289127: 
+first: cea33322
+second: c5213328
+--------------- 
+round 715728892: 
+first: ced22bf5
+second: c5502bff
+--------------- 
+round 717223789: 
+first: cf71d80c
+second: c4f3d806
+--------------- 
+round 717873184: 
+first: cfb734f1
+second: c43534fb
+--------------- 
+round 719232201: 
+first: d0485d90
+second: dbca5d9a
+--------------- 
+round 721530593: 
+first: d13ddc38
+second: dabfdc32
+--------------- 
+round 721544542: 
+first: d13f59a3
+second: dabd59a9
+--------------- 
+round 724428657: 
+first: d2736828
+second: d9f16822
+--------------- 
+round 726002794: 
+first: d31b8af7
+second: d8998afd
+--------------- 
+round 726815293: 
+first: d37253bc
+second: d8f053b6
+--------------- 
+round 727334528: 
+first: d3a9c991
+second: d82bc99b
+--------------- 
+round 728252769: 
+first: d40bddb8
+second: df89ddb2
+--------------- 
+round 728726605: 
+first: d43e7a2c
+second: dfbc7a26
+--------------- 
+round 730023439: 
+first: d4c8fe7a
+second: df4afe70
+--------------- 
+round 733077729: 
+first: d60f3a38
+second: dd8d3a32
+--------------- 
+round 733087502: 
+first: d6104573
+second: dd924579
+--------------- 
+round 733686062: 
+first: d6503453
+second: ddd23459
+--------------- 
+round 735571577: 
+first: d7199960
+second: dc9b996a
+--------------- 
+round 735721663: 
+first: d729a14a
+second: dcaba140
+--------------- 
+round 738946540: 
+first: d8821585
+second: d300158f
+--------------- 
+round 740037700: 
+first: d8f6a1ed
+second: d374a1e7
+--------------- 
+round 741751830: 
+first: d9adb8ab
+second: d22fb8a1
+--------------- 
+round 742553123: 
+first: da034f06
+second: d1814f0c
+--------------- 
+round 742829571: 
+first: da20d626
+second: d1a2d62c
+--------------- 
+round 743367132: 
+first: da5a4115
+second: d1d8411f
+--------------- 
+round 743534985: 
+first: da6c2ed0
+second: d1ee2eda
+--------------- 
+round 745497187: 
+first: db3dc4c6
+second: d0bfc4cc
+--------------- 
+round 746376139: 
+first: db9ba69e
+second: d019a694
+--------------- 
+round 747125558: 
+first: dbebb28b
+second: d069b281
+--------------- 
+round 751081816: 
+first: dd924579
+second: d6104573
+--------------- 
+round 751680376: 
+first: ddd23459
+second: d6503453
+--------------- 
+round 752049803: 
+first: ddf9a9de
+second: d67ba9d4
+--------------- 
+round 752283449: 
+first: de129ea0
+second: d5909eaa
+--------------- 
+round 753365059: 
+first: de8625e6
+second: d50425ec
+--------------- 
+round 753472629: 
+first: de91a344
+second: d513a34e
+--------------- 
+round 754247834: 
+first: dee47047
+second: d566704d
+--------------- 
+round 754703295: 
+first: df15164a
+second: d4971640
+--------------- 
+round 755587145: 
+first: df737e10
+second: d4f17e1a
+--------------- 
+round 757080685: 
+first: e013050c
+second: eb910506
+--------------- 
+round 757211039: 
+first: e020f16a
+second: eba2f160
+--------------- 
+round 757662893: 
+first: e05134cc
+second: ebd334c6
+--------------- 
+round 758685192: 
+first: e0be6649
+second: eb3c6643
+--------------- 
+round 759148899: 
+first: e0efedc6
+second: eb6dedcc
+--------------- 
+round 759719171: 
+first: e12cd726
+second: eaaed72c
+--------------- 
+round 760422529: 
+first: e177f798
+second: eaf5f792
+--------------- 
+round 764955262: 
+first: e35c1d83
+second: e8de1d89
+--------------- 
+round 767854047: 
+first: e491bd2a
+second: ef13bd20
+--------------- 
+round 768403494: 
+first: e4cc6d1b
+second: ef4e6d11
+--------------- 
+round 769793652: 
+first: e560e93d
+second: eee2e937
+--------------- 
+round 770024085: 
+first: e5798624
+second: eefb862e
+--------------- 
+round 770042997: 
+first: e57b8b44
+second: eef98b4e
+--------------- 
+round 770697884: 
+first: e5c17e55
+second: ee437e5f
+--------------- 
+round 772483567: 
+first: e680399a
+second: ed023990
+--------------- 
+round 772587428: 
+first: e68b518d
+second: ed095187
+--------------- 
+round 773193637: 
+first: e6cc1194
+second: ed4e119e
+--------------- 
+round 773316526: 
+first: e6d931d3
+second: ed5b31d9
+--------------- 
+round 773653365: 
+first: e6fd2c44
+second: ed7f2c4e
+--------------- 
+round 774442307: 
+first: e75170e6
+second: ecd370ec
+--------------- 
+round 774463517: 
+first: e753b4dc
+second: ecd1b4d6
+--------------- 
+round 775035836: 
+first: e790d635
+second: ec12d63f
+--------------- 
+round 775163108: 
+first: e79e6e4d
+second: ec1c6e47
+--------------- 
+round 776148173: 
+first: e807a5ac
+second: e385a5a6
+--------------- 
+round 776652163: 
+first: e83d7aa6
+second: e3bf7aac
+--------------- 
+round 776703243: 
+first: e842ef5e
+second: e3c0ef54
+--------------- 
+round 776810665: 
+first: e84e68b0
+second: e3cc68ba
+--------------- 
+round 779066722: 
+first: e93f61bf
+second: e2bd61b5
+--------------- 
+round 780576460: 
+first: e9e0a3a5
+second: e262a3af
+--------------- 
+round 781417859: 
+first: ea3a82a6
+second: e1b882ac
+--------------- 
+round 783852035: 
+first: eb3e8226
+second: e0bc822c
+--------------- 
+round 784102551: 
+first: eb594432
+second: e0db4438
+--------------- 
+round 788147546: 
+first: ed095187
+second: e68b518d
+--------------- 
+round 790357778: 
+first: edf5658f
+second: e6776585
+--------------- 
+round 790701409: 
+first: ee1a19b8
+second: e59819b2
+--------------- 
+round 790725095: 
+first: ee1ca162
+second: e59ea168
+--------------- 
+round 792377693: 
+first: eecd259c
+second: e54f2596
+--------------- 
+round 793934478: 
+first: ef736df3
+second: e4f16df9
+--------------- 
+round 795791132: 
+first: f039bdd5
+second: fbbbbddf
+--------------- 
+round 796567743: 
+first: f08cb14a
+second: fb0eb140
+--------------- 
+round 797738717: 
+first: f109c41c
+second: fa8bc416
+--------------- 
+round 800639200: 
+first: f23f9231
+second: f9bd923b
+--------------- 
+round 801671351: 
+first: f2add112
+second: f92fd118
+--------------- 
+round 801747117: 
+first: f2b5e8cc
+second: f937e8c6
+--------------- 
+round 803566092: 
+first: f3783265
+second: f8fa326f
+--------------- 
+round 804582366: 
+first: f3e4bf23
+second: f866bf29
+--------------- 
+round 805477799: 
+first: f44463a2
+second: ffc663a8
+--------------- 
+round 805598937: 
+first: f4515400
+second: ffd3540a
+--------------- 
+round 807441619: 
+first: f51625d6
+second: fe9425dc
+--------------- 
+round 808419257: 
+first: f57e9220
+second: fefc922a
+--------------- 
+round 809302782: 
+first: f5dcf103
+second: fe5ef109
+--------------- 
+round 810616267: 
+first: f6693c9e
+second: fdeb3c94
+--------------- 
+round 812217204: 
+first: f7143c3d
+second: fc963c37
+--------------- 
+round 812498892: 
+first: f73252a5
+second: fcb052af
+--------------- 
+round 812816798: 
+first: f7544763
+second: fcd64769
+--------------- 
+round 817519559: 
+first: f94a9682
+second: f2c89688
+--------------- 
+round 818682094: 
+first: f9c6c293
+second: f244c299
+--------------- 
+round 820717952: 
+first: faa03691
+second: f122369b
+--------------- 
+round 824628425: 
+first: fc41e590
+second: f7c3e59a
+--------------- 
+round 824961575: 
+first: fc657b22
+second: f7e77b28
+--------------- 
+round 825418026: 
+first: fc963c37
+second: f7143c3d
+--------------- 
+round 828812704: 
+first: fe00d371
+second: f582d37b
+--------------- 
+round 831900024: 
+first: ff4a9659
+second: f4c89653
+--------------- 
+round 834414693: 
+first: 572ed4
+second: bd52ede
+--------------- 
+round 834535699: 
+first: 641b96
+second: be61b9c
+--------------- 
+round 834703751: 
+first: 760ec2
+second: bf40ec8
+--------------- 
+round 836223894: 
+first: 1186d2b
+second: a9a6d21
+--------------- 
+round 837728560: 
+first: 1b92461
+second: a3b246b
+--------------- 
+round 838632846: 
+first: 219baf3
+second: 99bbaf9
+--------------- 
+round 839609500: 
+first: 2820c55
+second: 9000c5f
+--------------- 
+round 839987022: 
+first: 2aa5f33
+second: 9285f39
+--------------- 
+round 840211975: 
+first: 2c26642
+second: 9406648
+--------------- 
+round 841053502: 
+first: 31c48c3
+second: 89e48c9
+--------------- 
+round 841770699: 
+first: 368e39e
+second: 8eae394
+--------------- 
+round 842228272: 
+first: 399c361
+second: 81bc36b
+--------------- 
+round 844689520: 
+first: 4a0a721
+second: f22a72b
+--------------- 
+round 846115936: 
+first: 53902b1
+second: ebb02bb
+--------------- 
+round 846237150: 
+first: 545f523
+second: ec7f529
+--------------- 
+round 846393244: 
+first: 556a155
+second: ed4a15f
+--------------- 
+round 848402222: 
+first: 62d3653
+second: daf3659
+--------------- 
+round 849188657: 
+first: 6813668
+second: d033662
+--------------- 
+round 849480724: 
+first: 6a0689d
+second: d226897
+--------------- 
+round 849883866: 
+first: 6cb7807
+second: d49780d
+--------------- 
+round 852816609: 
+first: 804b838
+second: 386b832
+--------------- 
+round 853289043: 
+first: 8372e56
+second: 3b52e5c
+--------------- 
+round 854604116: 
+first: 8c3a55d
+second: 341a557
+--------------- 
+round 854740219: 
+first: 8d22eee
+second: 3502ee4
+--------------- 
+round 856627160: 
+first: 99bbaf9
+second: 219baf3
+--------------- 
+round 856693463: 
+first: 9a2cff2
+second: 220cff8
+--------------- 
+round 856807644: 
+first: 9af0215
+second: 22d021f
+--------------- 
+round 858114568: 
+first: a3a9a49
+second: 1b89a43
+--------------- 
+round 858117610: 
+first: a3aed77
+second: 1b8ed7d
+--------------- 
+round 858149529: 
+first: a3e5640
+second: 1bc564a
+--------------- 
+round 858184057: 
+first: a420660
+second: 1c0066a
+--------------- 
+round 858481445: 
+first: a61ca14
+second: 1e3ca1e
+--------------- 
+round 859011696: 
+first: a9a6d21
+second: 1186d2b
+--------------- 
+round 859423214: 
+first: ac66193
+second: 1446199
+--------------- 
+round 860860108: 
+first: b5fdba5
+second: dddbaf
+--------------- 
+round 861958539: 
+first: bd52ede
+second: 572ed4
+--------------- 
+round 862581736: 
+first: c17bf69
+second: 795bf63
+--------------- 
+round 865972530: 
+first: d81ec6f
+second: 603ec65
+--------------- 
+round 866377221: 
+first: dad2634
+second: 62f263e
+--------------- 
+round 866396536: 
+first: daf3659
+second: 62d3653
+--------------- 
+round 867496064: 
+first: e24a791
+second: 5a6a79b
+--------------- 
+round 869874070: 
+first: f22a72b
+second: 4a0a721
+--------------- 
+round 872570194: 
+first: 1042a14f
+second: 1bc0a145
+--------------- 
+round 873118454: 
+first: 107d30cb
+second: 1bff30c1
+--------------- 
+round 873325968: 
+first: 10935b01
+second: 1b115b0b
+--------------- 
+round 875417111: 
+first: 1172b6b2
+second: 1af0b6b8
+--------------- 
+round 877451604: 
+first: 124c055d
+second: 19ce0557
+--------------- 
+round 881217699: 
+first: 13de4886
+second: 185c488c
+--------------- 
+round 882796057: 
+first: 1486dec0
+second: 1f04deca
+--------------- 
+round 883213944: 
+first: 14b38159
+second: 1f318153
+--------------- 
+round 883420118: 
+first: 14c986eb
+second: 1f4b86e1
+--------------- 
+round 884976356: 
+first: 156fc04d
+second: 1eedc047
+--------------- 
+round 885130488: 
+first: 158036d9
+second: 1e0236d3
+--------------- 
+round 885986126: 
+first: 15db9b33
+second: 1e599b39
+--------------- 
+round 886782157: 
+first: 1630a1ac
+second: 1db2a1a6
+--------------- 
+round 887030476: 
+first: 164b27a5
+second: 1dc927af
+--------------- 
+round 887163865: 
+first: 16596700
+second: 1ddb670a
+--------------- 
+round 888721539: 
+first: 16ffc7a6
+second: 1d7dc7ac
+--------------- 
+round 889147852: 
+first: 172d50a5
+second: 1caf50af
+--------------- 
+round 890315633: 
+first: 17aa0c28
+second: 1c280c22
+--------------- 
+round 891537004: 
+first: 182c8105
+second: 13ae810f
+--------------- 
+round 893554981: 
+first: 19040c14
+second: 12860c1e
+--------------- 
+round 893823851: 
+first: 1920c3fe
+second: 12a2c3f4
+--------------- 
+round 894021756: 
+first: 1935e775
+second: 12b7e77f
+--------------- 
+round 895808016: 
+first: 19f4b281
+second: 1276b28b
+--------------- 
+round 895918458: 
+first: 1a007e67
+second: 11827e6d
+--------------- 
+round 896223120: 
+first: 1a210901
+second: 11a3090b
+--------------- 
+round 896554010: 
+first: 1a4460c7
+second: 11c660cd
+--------------- 
+round 896596634: 
+first: 1a48ee47
+second: 11caee4d
+--------------- 
+round 897563678: 
+first: 1ab038e3
+second: 113238e9
+--------------- 
+round 898686619: 
+first: 1b282a4e
+second: 10aa2a44
+--------------- 
+round 898768941: 
+first: 1b30f54c
+second: 10b2f546
+--------------- 
+round 900276694: 
+first: 1bd200eb
+second: 105000e1
+--------------- 
+round 900596750: 
+first: 1bf43073
+second: 10763079
+--------------- 
+round 901203082: 
+first: 1c34f3d7
+second: 17b6f3dd
+--------------- 
+round 901503914: 
+first: 1c5515b7
+second: 17d715bd
+--------------- 
+round 902124625: 
+first: 1c976248
+second: 17156242
+--------------- 
+round 902663382: 
+first: 1cd0edeb
+second: 1752ede1
+--------------- 
+round 904389380: 
+first: 1d89492d
+second: 160b4927
+--------------- 
+round 905456144: 
+first: 1dfb3a81
+second: 16793a8b
+--------------- 
+round 906339736: 
+first: 1e599b39
+second: 15db9b33
+--------------- 
+round 907016693: 
+first: 1ea1e9c4
+second: 1523e9ce
+--------------- 
+round 907115911: 
+first: 1eac82c2
+second: 152e82c8
+--------------- 
+round 908190284: 
+first: 1f1f4425
+second: 149d442f
+--------------- 
+round 909239640: 
+first: 1f8f5979
+second: 140d5973
+--------------- 
+round 911672330: 
+first: 20933057
+second: 2b11305d
+--------------- 
+round 912281916: 
+first: 20d44cb5
+second: 2b564cbf
+--------------- 
+round 913313799: 
+first: 21428442
+second: 2ac08448
+--------------- 
+round 913975314: 
+first: 21892c8f
+second: 2a0b2c85
+--------------- 
+round 915324085: 
+first: 22193d04
+second: 299b3d0e
+--------------- 
+round 915343460: 
+first: 221b4ecd
+second: 29994ec7
+--------------- 
+round 915680838: 
+first: 223f57fb
+second: 29bd57f1
+--------------- 
+round 920260427: 
+first: 24287f1e
+second: 2faa7f14
+--------------- 
+round 921025345: 
+first: 247a32d8
+second: 2ff832d2
+--------------- 
+round 922684080: 
+first: 252b5ee1
+second: 2ea95eeb
+--------------- 
+round 924656649: 
+first: 25fe1050
+second: 2e7c105a
+--------------- 
+round 924746387: 
+first: 2607a616
+second: 2d85a61c
+--------------- 
+round 925074521: 
+first: 262ab280
+second: 2da8b28a
+--------------- 
+round 925230262: 
+first: 263b550b
+second: 2db95501
+--------------- 
+round 926790359: 
+first: 26e1f7f2
+second: 2d63f7f8
+--------------- 
+round 926891337: 
+first: 26ecc110
+second: 2d6ec11a
+--------------- 
+round 927153985: 
+first: 2708ced8
+second: 2c8aced2
+--------------- 
+round 927888626: 
+first: 275746af
+second: 2cd546a5
+--------------- 
+round 929471182: 
+first: 28004fb3
+second: 23824fb9
+--------------- 
+round 929844868: 
+first: 282839ad
+second: 23aa39a7
+--------------- 
+round 930412311: 
+first: 2864d5b2
+second: 23e6d5b8
+--------------- 
+round 930673571: 
+first: 2880bd86
+second: 2302bd8c
+--------------- 
+round 931065516: 
+first: 28aa9ac5
+second: 23289acf
+--------------- 
+round 932160450: 
+first: 291f8e5f
+second: 229d8e55
+--------------- 
+round 932428923: 
+first: 293c3b6e
+second: 22be3b64
+--------------- 
+round 932504936: 
+first: 294459e9
+second: 22c659e3
+--------------- 
+round 933120431: 
+first: 298617da
+second: 220417d0
+--------------- 
+round 933844626: 
+first: 29d3720f
+second: 22517205
+--------------- 
+round 933872126: 
+first: 29d66203
+second: 22546209
+--------------- 
+round 934058940: 
+first: 29ea5635
+second: 2268563f
+--------------- 
+round 934470258: 
+first: 2a16452f
+second: 21944525
+--------------- 
+round 935045640: 
+first: 2a53ba49
+second: 21d1ba43
+--------------- 
+round 937227418: 
+first: 2b3cc447
+second: 20bec44d
+--------------- 
+round 937466466: 
+first: 2b564cbf
+second: 20d44cb5
+--------------- 
+round 938427916: 
+first: 2bbcfe65
+second: 203efe6f
+--------------- 
+round 938710458: 
+first: 2bdb2c27
+second: 20592c2d
+--------------- 
+round 939704956: 
+first: 2c456575
+second: 27c7657f
+--------------- 
+round 939735475: 
+first: 2c48a7f6
+second: 27caa7fc
+--------------- 
+round 940354807: 
+first: 2c8aced2
+second: 2708ced8
+--------------- 
+round 940625965: 
+first: 2ca7c54c
+second: 2725c546
+--------------- 
+round 941863277: 
+first: 2d2bee0c
+second: 26a9ee06
+--------------- 
+round 942383238: 
+first: 2d6377bb
+second: 26e177b1
+--------------- 
+round 942916865: 
+first: 2d9c7718
+second: 261e7712
+--------------- 
+round 943615964: 
+first: 2de72315
+second: 2665231f
+--------------- 
+round 945897262: 
+first: 2edace53
+second: 2558ce59
+--------------- 
+round 946696286: 
+first: 2f3026a3
+second: 24b226a9
+--------------- 
+round 950283753: 
+first: 30af5570
+second: 3b2d557a
+--------------- 
+round 950990962: 
+first: 30fadf2f
+second: 3b78df25
+--------------- 
+round 951810804: 
+first: 315270bd
+second: 3ad070b7
+--------------- 
+round 954848474: 
+first: 3296e607
+second: 3914e60d
+--------------- 
+round 955498347: 
+first: 32dc4ffe
+second: 395e4ff4
+--------------- 
+round 956574865: 
+first: 334f4c08
+second: 38cd4c02
+--------------- 
+round 958910557: 
+first: 3448c69c
+second: 3fcac696
+--------------- 
+round 959272861: 
+first: 346f795c
+second: 3fed7956
+--------------- 
+round 959537794: 
+first: 348bc59f
+second: 3f09c595
+--------------- 
+round 960252638: 
+first: 34d82023
+second: 3f5a2029
+--------------- 
+round 961079477: 
+first: 35307104
+second: 3eb2710e
+--------------- 
+round 961420700: 
+first: 3554e355
+second: 3ed6e35f
+--------------- 
+round 967325090: 
+first: 37cb8b7f
+second: 3c498b75
+--------------- 
+round 968165452: 
+first: 38254e25
+second: 33a74e2f
+--------------- 
+round 968283077: 
+first: 3831de74
+second: 33b3de7e
+--------------- 
+round 970764114: 
+first: 393adf4f
+second: 32b8df45
+--------------- 
+round 970769553: 
+first: 393b7408
+second: 32b97402
+--------------- 
+round 971824096: 
+first: 39ac1731
+second: 322e173b
+--------------- 
+round 971942624: 
+first: 39b8c031
+second: 323ac03b
+--------------- 
+round 973583127: 
+first: 3a67f9b2
+second: 31e5f9b8
+--------------- 
+round 973619095: 
+first: 3a6bd132
+second: 31e9d138
+--------------- 
+round 974530525: 
+first: 3acd2b1c
+second: 314f2b16
+--------------- 
+round 975973076: 
+first: 3b673fdd
+second: 30e53fd7
+--------------- 
+round 976138060: 
+first: 3b78df25
+second: 30fadf2f
+--------------- 
+round 978956304: 
+first: 3ca5e481
+second: 3727e48b
+--------------- 
+round 981680436: 
+first: 3dc8dc7d
+second: 364adc77
+--------------- 
+round 984684892: 
+first: 3f09c595
+second: 348bc59f
+--------------- 
+round 987712000: 
+first: 404d1a11
+second: 4bcf1a1b
+--------------- 
+round 987751550: 
+first: 40515383
+second: 4bd35389
+--------------- 
+round 987774373: 
+first: 4053c394
+second: 4bd1c39e
+--------------- 
+round 991519636: 
+first: 41e3cd1d
+second: 4a61cd17
+--------------- 
+round 992224153: 
+first: 422f0d40
+second: 49ad0d4a
+--------------- 
+round 993237735: 
+first: 429b5062
+second: 49195068
+--------------- 
+round 993793517: 
+first: 42d6ad8c
+second: 4954ad86
+--------------- 
+round 994748422: 
+first: 433cac3b
+second: 48beac31
+--------------- 
+round 994908795: 
+first: 434dcd6e
+second: 48cfcd64
+--------------- 
+round 994910810: 
+first: 434e0487
+second: 48cc048d
+--------------- 
+round 1004104086: 
+first: 4723f72b
+second: 4ca1f721
+--------------- 
+round 1005569450: 
+first: 47c07bb7
+second: 4c427bbd
+--------------- 
+round 1008121809: 
+first: 48d11ac8
+second: 43531ac2
+--------------- 
+round 1008282687: 
+first: 48e249ca
+second: 436049c0
+--------------- 
+round 1009353635: 
+first: 4954ad86
+second: 42d6ad8c
+--------------- 
+round 1009623753: 
+first: 49718790
+second: 42f3879a
+--------------- 
+round 1009876768: 
+first: 498c8df1
+second: 420e8dfb
+--------------- 
+round 1012733765: 
+first: 4abdb6f4
+second: 413fb6fe
+--------------- 
+round 1014895545: 
+first: 4ba49e20
+second: 40269e2a
+--------------- 
+round 1015020835: 
+first: 4bb20006
+second: 4030000c
+--------------- 
+round 1015318219: 
+first: 4bd1c39e
+second: 4053c394
+--------------- 
+round 1015390716: 
+first: 4bd981f5
+second: 405b81ff
+--------------- 
+round 1016056724: 
+first: 4c20a51d
+second: 47a2a517
+--------------- 
+round 1016364586: 
+first: 4c418737
+second: 47c3873d
+--------------- 
+round 1017532828: 
+first: 4cbe4f55
+second: 473c4f5f
+--------------- 
+round 1020978170: 
+first: 4e2e4fe7
+second: 45ac4fed
+--------------- 
+round 1021167327: 
+first: 4e42842a
+second: 45c08420
+--------------- 
+round 1023373123: 
+first: 4f2e1ee6
+second: 44ac1eec
+--------------- 
+round 1025377362: 
+first: 5004324f
+second: 5b863245
+--------------- 
+round 1025391337: 
+first: 5005b070
+second: 5b87b07a
+--------------- 
+round 1025838865: 
+first: 50357d88
+second: 5bb77d82
+--------------- 
+round 1026671946: 
+first: 508e7917
+second: 5b0c791d
+--------------- 
+round 1029444745: 
+first: 51b6a3d0
+second: 5a34a3da
+--------------- 
+round 1030517959: 
+first: 52294582
+second: 59ab4588
+--------------- 
+round 1031714272: 
+first: 52a90d31
+second: 592b0d3b
+--------------- 
+round 1032313974: 
+first: 52e91b4b
+second: 596b1b41
+--------------- 
+round 1032328558: 
+first: 52eaaa13
+second: 5968aa19
+--------------- 
+round 1032642998: 
+first: 530c400b
+second: 588e4001
+--------------- 
+round 1033053627: 
+first: 53381c2e
+second: 58ba1c24
+--------------- 
+round 1037207865: 
+first: 54f3d4a0
+second: 5f71d4aa
+--------------- 
+round 1038295530: 
+first: 55680177
+second: 5eea017d
+--------------- 
+round 1038765868: 
+first: 559a3e45
+second: 5e183e4f
+--------------- 
+round 1040501813: 
+first: 5653a984
+second: 5dd1a98e
+--------------- 
+round 1042418094: 
+first: 572057d3
+second: 5ca257d9
+--------------- 
+round 1042814522: 
+first: 574aafa7
+second: 5cc8afad
+--------------- 
+round 1044958827: 
+first: 582fb8fe
+second: 53adb8f4
+--------------- 
+round 1045211319: 
+first: 584ab112
+second: 53c8b118
+--------------- 
+round 1046391231: 
+first: 58c8b84a
+second: 534ab840
+--------------- 
+round 1046436241: 
+first: 58cd8708
+second: 534f8702
+--------------- 
+round 1046739374: 
+first: 58ede7d3
+second: 536fe7d9
+--------------- 
+round 1047987142: 
+first: 59732e7b
+second: 52f12e71
+--------------- 
+round 1048512273: 
+first: 59ab4588
+second: 52294582
+--------------- 
+round 1050793850: 
+first: 5a9ef867
+second: 511cf86d
+--------------- 
+round 1051108435: 
+first: 5ac09256
+second: 5142925c
+--------------- 
+round 1052498641: 
+first: 5b550fc8
+second: 50d70fc2
+--------------- 
+round 1058988989: 
+first: 5e0a4e3c
+second: 55884e36
+--------------- 
+round 1059628695: 
+first: 5e4ea232
+second: 55cca238
+--------------- 
+round 1059873202: 
+first: 5e68bfef
+second: 55eabfe5
+--------------- 
+round 1060366911: 
+first: 5e9d7bca
+second: 551f7bc0
+--------------- 
+round 1069417342: 
+first: 62642c83
+second: 69e62c89
+--------------- 
+round 1069552211: 
+first: 62729456
+second: 69f0945c
+--------------- 
+round 1070627274: 
+first: 62e56897
+second: 6967689d
+--------------- 
+round 1071487098: 
+first: 63413f67
+second: 68c33f6d
+--------------- 
+round 1071723523: 
+first: 635a8026
+second: 68d8802c
+--------------- 
+round 1071970380: 
+first: 6374de25
+second: 68f6de2f
+--------------- 
+round 1072759910: 
+first: 63c932db
+second: 684b32d1
+--------------- 
+round 1073152181: 
+first: 63f31904
+second: 6871190e
+--------------- 
+done! 
+Time taken: 4467.84

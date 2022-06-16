@@ -1,0 +1,133 @@
+// starter= 0x00001234, increament=3, power= 2,25
+
+round 2207391:
+first: ebd88d
+second: b69d887
+--------------- 
+round 4528710: 
+first: 1e3ca1e
+second: a61ca14
+--------------- 
+round 4740092: 
+first: 1fa5e18
+second: a785e12
+--------------- 
+round 5196529: 
+first: 22b1ecb
+second: 9a91ec1
+--------------- 
+round 5214205: 
+first: 22d021f
+second: 9af0215
+--------------- 
+round 6569813: 
+first: 2bdcd87
+second: 93fcd8d
+--------------- 
+round 7161673: 
+first: 2fd0533
+second: 97f0539
+--------------- 
+round 7557359: 
+first: 32748bd
+second: 8a548b7
+--------------- 
+round 7804165: 
+first: 341a557
+second: 8c3a55d
+--------------- 
+round 8311394: 
+first: 377d2e2
+second: 8f5d2e8
+--------------- 
+round 8723389: 
+first: 3a3d45f
+second: 821d455
+--------------- 
+round 8765435: 
+first: 3a85211
+second: 82a521b
+--------------- 
+round 9035149: 
+first: 3c5210f
+second: 8472105
+--------------- 
+round 9842603: 
+first: 41b5fe1
+second: f995feb
+--------------- 
+round 12247823: 
+first: 51c479d
+second: e9e4797
+--------------- 
+round 13299752: 
+first: 58ca34c
+second: e0ea346
+--------------- 
+round 13543329: 
+first: 5a6a79b
+second: e24a791
+--------------- 
+round 14326105: 
+first: 5fa43a3
+second: e7843a9
+--------------- 
+round 16558834: 
+first: 6e8bed2
+second: d6abed8
+--------------- 
+round 17706652: 
+first: 7635878
+second: ce15872
+--------------- 
+round 18859402: 
+first: 7de78fa
+second: c5c78f0
+--------------- 
+round 20077644: 
+first: 8609848
+second: 3e29842
+--------------- 
+round 21570493: 
+first: 9000c5f
+second: 2820c55
+--------------- 
+round 25071815: 
+first: a7607a5
+second: 1f407af
+--------------- 
+round 25809843: 
+first: ac4dc19
+second: 146dc13
+--------------- 
+round 26819449: 
+first: b30b283
+second: b2b289
+--------------- 
+round 27214366: 
+first: b5ae106
+second: d8e10c
+--------------- 
+round 28164755: 
+first: bc06439
+second: 426433
+--------------- 
+round 31959172: 
+first: d55add0
+second: 6d7adda
+--------------- 
+done! 
+Time taken: 136.893
+
+
+
+
+
+
+// manual data
+l16_cDiff: a00
+r16_cDiff: 801b
+r16_cDiff_fbox: 834d
+mask(make all star to 0): a000300
+active_bits_position: ffff0f00
+Array size: 1d // ==29, only 29 right pairs are obtained, less than 2^10
