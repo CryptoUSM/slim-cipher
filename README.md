@@ -16,6 +16,6 @@ IEEE Access, 8, 203747-203757.
 
 - slim.cpp: SLIM encryption and decryption 
 - slim-key.cpp: SLIM key scheduling algorithm
-- slim-ddt.cpp: generate SLIM DDT 
+- slim-ddt.cpp: generate SLIM Differential Distribution Table 
 - slim-attack.cpp: SLIM key recovery attack
 
