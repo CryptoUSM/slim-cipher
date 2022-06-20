@@ -1,0 +1,12 @@
+# Differential search for WARP (endweight = rounds+64)
+---
+cipher: slim
+wordsize: 32
+rounds: 12
+mode: 4
+endweight: 999
+sweight: 28
+fixedVariables:
+- X0: "0x0B82000A"
+- X12: "0x0A00801B"
+...
