@@ -22,27 +22,18 @@
  * 14 0290 9000 0090 9004 2^−34
  * */
 
-static inline void ltrim(std::string &s) {
-    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](unsigned char ch) {
-        return !std::isspace(ch);
-    }));
-}
-
-// trim from end (in place)
-static inline void rtrim(std::string &s) {
-    s.erase(std::find_if(s.rbegin(), s.rend(), [](unsigned char ch) {
-        return !std::isspace(ch);
-    }).base(), s.end());
-}
-
-// trim from both ends (in place)
-static inline void trim(std::string &s) {
-    ltrim(s);
-    rtrim(s);
-}
-
-
 int main() {
+    std::ofstream filter_outdata;
+    std::ofstream key_outdata;
+    filter_outdata.open("13R-filter.txt"); // opens the file
+    key_outdata.open("13R-key-hit.txt"); // opens the file
+    if( !filter_outdata || !key_outdata) { // file couldn't be opened
+        std::cerr << "Error: file could not be opened" << std::endl;
+        exit(1);
+    }
+
+    clock_t tStart = clock();
+
     int pt_pairs_count = pow(2, 30);
     int round1 = 13; // for thre 13-round key recovery
     int round2 = 14;
@@ -50,50 +41,74 @@ int main() {
     std::vector<uint32_t> first_plaintext;
     std::vector<uint32_t> second_plaintext;
 
+    // for 13R
     uint32_t alpha = 0x0B82000a; // pDiff after 12r
     uint32_t beta = 0x0a00801b; // cDiff which resulting pDiff
 
-    uint16_t l16_cDiff = ((beta >> 16) & 0xffff); //0a00
-    uint16_t r16_cDiff = (beta & 0xffff); //801b
+    uint16_t l16_cDiff = ((beta >> 16) & 0xffff);
+    uint16_t r16_cDiff = (beta & 0xffff);
 
-//    l16_cDiff: a00
-//    r16_cDiff: 801b
-//    r16_cDiff_fbox: 834d ----> F(801b)
-//    mask(make all star to 0): a000300
-//    active_bits_position: ffff0f00
 
-    uint16_t r16_cDiff_fbox = (permutation(substitution(r16_cDiff)) xor l16_cDiff);
+    uint16_t fBox_sub_beta=0;
+    for (int i=0; i<4; i++){
+        int rem= r16_cDiff&0xf;
+        if (rem!=0){
+            fBox_sub_beta+=(0<<4*i);
 
-    // only second sbox is fixed for r16:801b // filtering_pattern
-    uint32_t mask = (l16_cDiff << 16) | (0x0f00 & r16_cDiff_fbox);
+        }
+        else{
+            fBox_sub_beta+=(0b1111<<4*i);
+        }
+        r16_cDiff= r16_cDiff>>4;
 
-    //make all inactive bits to 1
-    uint32_t active_bits_position = (((l16_cDiff | 0xffff) << 16) + (r16_cDiff_fbox | 0x0f00)) & 0xffff0f00;
-    // mask=1000 0011 0100 1101 (right), all
-    // pattern= 0a00 **** 0011 **** **** --> active sbox= non zero input
+    }
+
+    // represent known bits as 1
+    // represent unknown * as 0
+    uint16_t fBox_per_beta= permutation(fBox_sub_beta);
+
+    uint32_t mask= fBox_per_beta; // no need to xor with l16 in this case
+
+//    std::cout<<"mask-l16: "<< std::bitset<32>(l16_cDiff<< 16)<< std::endl;
+
+    // template is actually preserved the ACTUAL known bits, then represent * with 0
+    // in our case, template always all 0 as the inactive bits=0
+    uint32_t temp_late= ((l16_cDiff<<16) + 0);
+    mask= ((0xffff<< 16) + mask);
+    std::cout<<"mask: "<< std::bitset<32>(mask)<< std::endl;
+    std::cout<<"template: "<< std::bitset<32>(temp_late)<< std::endl;
 
     uint32_t first = 0xa4321411;
     uint32_t second;
     int increment = 7; //should be a prime number
 
-
-// this will need 4300++ seconds, so just use the input file to read the pairs
+// linear filtering
     for (int j = 0; j < pt_pairs_count; j++) {
 
         second = first xor alpha;
 
-        uint32_t encrypted_first = encrypt(first, round1);
+        uint32_t encrypted_first = encrypt(first, round1); //encrypt 13 rounds
         uint32_t encrypted_second = encrypt(second, round1);
 
-        uint32_t ciphertext_diff = encrypted_first xor encrypted_second;
+        uint32_t ciphertext_diff = (encrypted_first ^ encrypted_second);
 
-        if (((ciphertext_diff xor mask) & active_bits_position) == 0) {
+//        pattern: 0 a 0 0 0*** *0** ***0 ***0
+        if ((ciphertext_diff & mask) == temp_late) {
             first_plaintext.push_back(first);
             second_plaintext.push_back(second);
+
+            filter_outdata<< "round: "<< std::dec<< j << ": \n";
+            filter_outdata<< "first: "<< std::hex<< first << "\n";
+            filter_outdata<< "second: "<< std::hex<< second << "\n";
+            filter_outdata<< "cDiff: "<< std::hex<< ciphertext_diff << "\n";
+            filter_outdata<< "--------------- "<< "\n";
         }
 
-        first = first + increment;
+        first = first +increment;
     }
+    filter_outdata<< "done! \n";
+    filter_outdata<< "Time taken: " << ((double)(clock() - tStart)/CLOCKS_PER_SEC);
+    filter_outdata.close();
 
     uint32_t key_counter = pow(2, 12);
     std::vector<uint16_t> subkeys;
