@@ -7,7 +7,6 @@
 #include <bitset>
 #include "key.h"
 
-
 uint8_t master_key[20] = {
         0b0011, 0b1001, 0b1011, 0b0100,
         0b1110, 0b1100, 0b1011, 0b0110,
@@ -15,6 +14,7 @@ uint8_t master_key[20] = {
         0b1010, 0b1000, 0b1101, 0b1001,
         0b0011, 0b1101, 0b0010, 0b1110,
 };
+
 int pBox[16] = {7, 13, 1, 8, 11, 14, 2, 5, 4, 10, 15, 0, 3, 6, 9, 12};
 int sBox[16] = {12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2};
 
@@ -47,7 +47,7 @@ uint16_t permutation(uint16_t x) {
     return total;
 }
 
-uint32_t decrypt(uint32_t ciphertext, uint16_t subkey) {
+uint32_t one_round_decrypt(uint32_t ciphertext, uint16_t subkey ) {
     uint16_t l16 = ((ciphertext >> 16) & 0xffff);
     uint16_t r16 = ciphertext & 0xffff;
 
@@ -63,7 +63,11 @@ uint32_t decrypt(uint32_t ciphertext, uint16_t subkey) {
 
 }
 
-uint32_t encrypt(uint32_t plaintext, int round) {
+// adjust the encryption function
+// input, start round, end round,
+// main function - independent,
+
+uint32_t encrypt(uint32_t plaintext, int round) { //start from round 0
 
 //    uint32_t plaintext = 0x4356cded;
     uint32_t ciphertext = 0;
@@ -76,12 +80,14 @@ uint32_t encrypt(uint32_t plaintext, int round) {
     uint16_t *temp;
 
     temp = key_scheduling(master_key, round);
-
     for (int i = 0; i < round; i++) {
         round_key[i] = 0;
         round_key[i] = *(temp + int(i));
 
     }
+
+//    std::cout << "round_key 13R: " << std::hex << round_key[11] << std::endl;
+
 
     /*
      * keyed_r16= output of right halves input xor with round key
@@ -89,8 +95,6 @@ uint32_t encrypt(uint32_t plaintext, int round) {
      * per_r16= output of right halves input after pbox
      * round_r16= variable to preserve original value of r16 for the current round
      * */
-
-//    std::cout << "input: " << std::hex << plaintext << "\n";
 
     for (int r = 0; r < round; r++) {
         uint16_t keyed_r16 = r16 xor round_key[r]; // r16_x1
@@ -111,7 +115,6 @@ uint32_t encrypt(uint32_t plaintext, int round) {
 
 //        std::cout << "next r16: " << std::hex << r16 << std::endl;
 //        std::cout << "next l16: " << std::hex << l16 << std::endl;
-
 
     }
 
