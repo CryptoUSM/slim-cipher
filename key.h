@@ -23,6 +23,15 @@ uint32_t one_round_decrypt(uint32_t plaintext, u_int16_t subkey);
 uint16_t substitution(uint16_t x);
 uint16_t permutation(uint16_t x);
 
+
 #endif //SLIM_H
 
 
+//#ifndef READ_INPUT_H
+//#define READ_INPUT_H
+//
+//#include <cstdint>
+//
+//static inline void trim(std::string &s);
+//
+//#endif //READ_INPUT_H
