@@ -42,21 +42,42 @@ static inline void trim(std::string &s) {
 int main() {
     std::ofstream filter_outdata;
     std::ofstream key_outdata;
-//    filter_outdata.open("13R-filter-corrected-2.txt"); // opens the file
-    key_outdata.open("13R-key-hit-corrected-2.txt"); // opens the file
-    if( !filter_outdata || !key_outdata) { // file couldn't be opened
+    std::ofstream diff_outdata;
+
+    filter_outdata.open("13R-filter-corrected-3.txt"); // opens the file
+    key_outdata.open("13R-key-hit-corrected-3.txt"); // opens the file
+    diff_outdata.open("13R-key-diff-corrected-3.txt"); // opens the file
+
+    if( !filter_outdata || !key_outdata || !diff_outdata) { // file couldn't be opened
         std::cerr << "Error: file could not be opened" << std::endl;
         exit(1);
     }
 
+
+    //uint8_t master_key[20] = {
+//        0b0011, 0b1001, 0b1011, 0b0100,
+//        0b1110, 0b1100, 0b1011, 0b0110,
+//        0b0001, 0b1001, 0b0110, 0b1001,
+//        0b1010, 0b1000, 0b1101, 0b1001,
+//        0b0011, 0b1101, 0b0010, 0b1110,
+//};
+
+    uint8_t master_key[20] = {
+            0x1, 0x2, 0x3, 0x4,
+            0x5, 0x6, 0x7, 0x8,
+            0x9, 0xa, 0b0110, 0b1001,
+            0b1010, 0b1000, 0b1101, 0b1001,
+            0b0011, 0b1101, 0b0010, 0b1110,
+    };
+
     clock_t tStart = clock();
 
-    int pt_pairs_count = pow(2, 30);
+    int pt_pairs_count = pow(2, 28);
     int round1 = 13; // for thre 13-round key recovery
     int round2 = 14;
 
-    std::vector<uint32_t> first_plaintext;
-    std::vector<uint32_t> second_plaintext;
+    std::vector<uint32_t> first_ciphertext;
+    std::vector<uint32_t> second_ciphertext;
 
     // for 13R
     uint32_t alpha = 0x0B82000a; // pDiff after 12r
@@ -97,71 +118,74 @@ int main() {
     std::cout<<"mask: "<< std::bitset<32>(mask)<< std::endl;
     std::cout<<"template: "<< std::hex<<(temp_late)<< std::endl;
 
-    uint32_t first = 0xa4321411;
+    uint32_t first = 0x1234abcd;
     uint32_t second;
     int increment = 7; //should be a prime number
 
-    // 13r-be43, 12r-89e7
+    // run1: 13r-be43, 12r-89e7
+    // run2: 13R-04df, 12r-
 
 // linear filtering
-//    for (int j = 0; j < pt_pairs_count; j++) {
-//
-//        second = first xor alpha;
-//
-//        uint32_t encrypted_first = encrypt(first, round1); //encrypt 13 rounds
-//        uint32_t encrypted_second = encrypt(second, round1);
-//
-//        uint32_t ciphertext_diff = (encrypted_first ^ encrypted_second);
-//
-////        pattern: 801b 0*** *0** ***0 ***0
-//        if ((ciphertext_diff & mask) == temp_late) {
-//            first_plaintext.push_back(encrypted_first);
-//            second_plaintext.push_back(encrypted_second);
-//
-//            filter_outdata<< "round: "<< std::dec<< j << ": \n";
-//            filter_outdata<< "af_pl: "<< std::hex<< first << "\n";
-//            filter_outdata<< "bs_pl: "<< std::hex<< second << "\n";
-//            filter_outdata<< "cf_cp: "<< std::hex<< encrypted_first << "\n";
-//            filter_outdata<< "ds_cp: "<< std::hex<< encrypted_second << "\n";
-//            filter_outdata<< "cDiff: "<< std::hex<< ciphertext_diff << "\n";
-//            filter_outdata<< "--------------- "<< "\n";
-//        }
-//
-//        first = first +increment;
-//    }
-//    filter_outdata<< "done! \n";
-//    filter_outdata<< "Time taken: " << ((double)(clock() - tStart)/CLOCKS_PER_SEC);
-//    filter_outdata.close();
+
+    uint16_t *round_keys;
+    round_keys = key_scheduling(master_key, round1);
+
+    for (int j = 0; j < pt_pairs_count; j++) {
+
+        second = first xor alpha;
+
+        uint32_t encrypted_first = encrypt(first, round1, round_keys); //encrypt 13 rounds
+        uint32_t encrypted_second = encrypt(second, round1, round_keys);
+
+        uint32_t ciphertext_diff = (encrypted_first ^ encrypted_second);
+
+//        pattern: 801b 0*** *0** ***0 ***0
+        if ((ciphertext_diff & mask) == temp_late) {
+            first_ciphertext.push_back(encrypted_first);
+            second_ciphertext.push_back(encrypted_second);
+
+            filter_outdata<< "round: "<< std::dec<< j << ": \n";
+            filter_outdata<< "af_pl: "<< std::hex<< first << "\n";
+            filter_outdata<< "bs_pl: "<< std::hex<< second << "\n";
+            filter_outdata<< "cf_cp: "<< std::hex<< encrypted_first << "\n";
+            filter_outdata<< "ds_cp: "<< std::hex<< encrypted_second << "\n";
+            filter_outdata<< "ecDiff: "<< std::hex<< ciphertext_diff << "\n";
+            filter_outdata<< "--------------- "<< "\n";
+        }
+
+        first = first +increment;
+    }
+    filter_outdata<< "Time taken: " << ((double)(clock() - tStart)/CLOCKS_PER_SEC);
+    filter_outdata.close();
 
 // Read the input file and insert into vector
-    std::ifstream in;
-    std::string file_name= "13R-filter-corrected-2.txt";
-    in.open(file_name); // opens the file
-    if(!in)
-    {
-        std::cerr << "Cannot open the File : "<<file_name<<std::endl;
-        return false;
-    }
-    std::string extracted_input;
-    std::string str;
-    std::size_t pos{};
-    while (std::getline(in, str)){
-        // Line contains string of length > 0 then save it in vector
-        if(str.size() > 0){
-//            std::string round= str;
-            if (str[0]== 'c' || str[0]== 'd'){
-                extracted_input= (str.substr(str.find(": ")+1));
-                trim(extracted_input);
-                std::string x= "0x"+extracted_input;
-                std::uint32_t y= stol(x, &pos, 16);
-
-                if (str[0]== 'c')
-                    first_plaintext.push_back(y);
-                else
-                    second_plaintext.push_back(y);
-            }
-        }
-    }
+//    std::ifstream in;
+//    std::string file_name= "13R-filter-corrected-3.txt";
+//    in.open(file_name); // opens the file
+//    if(!in)
+//    {
+//        std::cerr << "Cannot open the File : "<<file_name<<std::endl;
+//        return false;
+//    }
+//    std::string extracted_input;
+//    std::string str;
+//    std::size_t pos{};
+//    while (std::getline(in, str)){
+//        // Line contains string of length > 0 then save it in vector
+//        if(str.size() > 0){
+//            if (str[0]== 'c' || str[0]== 'd'){
+//                extracted_input= (str.substr(str.find(": ")+1));
+//                trim(extracted_input);
+//                std::string x= "0x"+extracted_input;
+//                std::uint32_t y= stol(x, &pos, 16);
+//
+//                if (str[0]== 'c')
+//                    first_ciphertext.push_back(y);
+//                else if (str[0]== 'd')
+//                    second_ciphertext.push_back(y);
+//            }
+//        }
+//    }
 
     uint32_t key_counter = pow(2, 12);
     std::vector<uint16_t> subkeys;
@@ -181,43 +205,42 @@ int main() {
     }
 
     for (int j = 0; j < subkeys.size(); j++) {
-        for (int k = 0; k < first_plaintext.size(); k++) {
-            uint32_t decrypted_first = one_round_decrypt(first_plaintext[k], subkeys.at(j));
-            uint32_t decrypted_second = one_round_decrypt(second_plaintext[k], subkeys.at(j));
+        for (int k = 0; k < first_ciphertext.size(); k++) {
+            uint32_t decrypted_first = one_round_decrypt(first_ciphertext[k], subkeys.at(j));
+            uint32_t decrypted_second = one_round_decrypt(second_ciphertext[k], subkeys.at(j));
 
-            uint16_t first_a= first_plaintext[k]&0xffff;
-            uint16_t first_z= decrypted_first&0xffff;
+            uint16_t first_a= first_ciphertext[k]&0xffff;
+            uint16_t first_z= ((decrypted_first>>16)&0xffff); //use left r16
 
-
-            uint16_t second_a= second_plaintext[k]&0xffff;
-            uint16_t second_z= decrypted_second&0xffff;
+            uint16_t second_a= second_ciphertext[k]&0xffff;
+            uint16_t second_z=((decrypted_second>>16)&0xffff);
 
             uint16_t aDiff= first_a xor second_a;
             uint16_t zDiff= first_z xor second_z;
 
-            key_outdata<< "pairs: "<< std::hex<< first_plaintext[k]<<" "<< second_plaintext[k]<<" "<< "\n";
-            key_outdata<< "aDiff: "<< std::hex<< first_a<<" "<< second_a<<" "<< aDiff<< "\n";
-            key_outdata<< "zDiff: "<< std::hex<<  first_z<<" "<< second_z<<" "<< zDiff<< "\n";
-
-            if ((aDiff xor zDiff) == l16_cDiff) {
+            if ((aDiff xor zDiff) == 0x0a00) {
                 subkeys_hits[j] += 1;
-//                std::cout<< "sadadsdsadsd: "<< decrypted_first<<" "<< decrypted_second<<" "<< l16_cDiff<< "\n";
+                std::cout<< "hits!: "<< decrypted_first<<" "<< decrypted_second<<" "<< l16_cDiff<< "\n";
 
             }
 
-            key_outdata<< "cDiff_r16: "<< std::hex<<  (aDiff xor zDiff)<<" "<< "\n";
-            key_outdata<< "-------------------- \n";
+            diff_outdata<< "pairs: "<< std::hex<< first_ciphertext[k]<<" "<< second_ciphertext[k]<<" "<< "\n";
+            diff_outdata<< "pairs-decrypted: "<< std::hex<< decrypted_first<<" "<< decrypted_second<<" "<< "\n";
+            diff_outdata<< "pairs-verify-encrypted: "<< std::hex<< one_round_encrypt(decrypted_first, subkeys[j])<<" "<< one_round_encrypt(decrypted_second, subkeys[j])<<" "<< "\n";
+            diff_outdata<< "aDiff: "<< std::hex<< first_a<<" "<< second_a<<" "<< aDiff<< "\n";
+            diff_outdata<< "zDiff: "<< std::hex<<  first_z<<" "<< second_z<<" "<< zDiff<< "\n";
+            diff_outdata<< "cDiff_r16: "<< std::hex<<  (aDiff xor zDiff)<<" "<< "\n";
+            diff_outdata<< "-------------------- \n";
 
         }
 
-        key_outdata<< subkeys[j]<< ": "<< subkeys_hits[j]<< "\n";
-        key_outdata<< "==================================""\n";
+        key_outdata<< std::hex<<subkeys[j]<< ": "<< subkeys_hits[j]<< "\n";
 
     }
 
 
 
 // most_possible_key= subkeys.find_max (encounter)
-// match with your 12th- subkey
+// match with your 13th- subkey
 }
 

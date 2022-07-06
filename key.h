@@ -17,9 +17,9 @@ uint16_t * key_scheduling(uint8_t input_master_key[20], int round);
 
 #include <cstdint>
 
-uint32_t encrypt(uint32_t plaintext, int round);
+uint32_t encrypt(uint32_t plaintext, int round, uint16_t *round_keys);
 uint32_t one_round_decrypt(uint32_t plaintext, u_int16_t subkey);
-
+uint32_t one_round_encrypt(uint32_t ciphertext, u_int16_t subkey);
 uint16_t substitution(uint16_t x);
 uint16_t permutation(uint16_t x);
 
