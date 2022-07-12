@@ -7,6 +7,19 @@
 #include <bitset>
 #include "key.h"
 
+uint8_t *randomize_master_key(){
+    static uint8_t master_key[20];
+    srand((unsigned int)time(NULL));
+
+    for (int j=0; j<20; j++){
+        uint8_t cur= rand()%1000;
+        master_key[j]= cur& 0xf;
+    }
+
+    return master_key;
+
+}
+
 int circular_shift(uint8_t input, int moves ){
     uint8_t output=0;
     moves =moves% 4;
@@ -34,6 +47,7 @@ uint16_t *key_scheduling(uint8_t input_master_key[20], int round){
 
     for (int k=0; k<20; k++){
         master_key[k]= *(temp+k);
+        std::cout<< std::bitset<8>(master_key[k])<< "\n";
     }
 
 
@@ -46,9 +60,9 @@ uint16_t *key_scheduling(uint8_t input_master_key[20], int round){
      * k5- 0, 1, 2, 3,
      * */
 
-
-
     int reversed_index=19; // because master_key has max index=19
+
+    std::cout<<  "==============\n";
 
     // inject first five round keys
     for (int m=0; m<5; m++){
@@ -57,8 +71,14 @@ uint16_t *key_scheduling(uint8_t input_master_key[20], int round){
             uint8_t base= master_key[reversed_index];
             round_key[m]+= (base<<(n*4)) ;
             reversed_index-=1;
+            std::cout<< std::hex<<(round_key[m])<< "\n";
+
         }
+        std::cout<< std::bitset<20>(round_key[m])<<"---";
+        std::cout<< std::hex<<(round_key[m])<< "\n";
+
     }
+
 
     // for first state lsb and msb
     for (int i=0; i<10; i++){

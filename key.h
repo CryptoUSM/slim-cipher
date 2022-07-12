@@ -8,7 +8,7 @@
 #include <cstdint>
 
 uint16_t * key_scheduling(uint8_t input_master_key[20], int round);
-
+uint8_t * randomize_master_key();
 #endif //SLIMDDT_CPP_KEY_SCHEDULING_H
 
 
@@ -27,11 +27,11 @@ uint16_t permutation(uint16_t x);
 #endif //SLIM_H
 
 
-//#ifndef READ_INPUT_H
-//#define READ_INPUT_H
-//
-//#include <cstdint>
-//
-//static inline void trim(std::string &s);
-//
-//#endif //READ_INPUT_H
+#ifndef ATTACK_H
+#define ATTACK_H
+
+#include <cstdint>
+
+int attack(std::string run);
+
+#endif //ATTACK_H

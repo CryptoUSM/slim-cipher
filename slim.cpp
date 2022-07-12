@@ -84,16 +84,6 @@ uint32_t encrypt(uint32_t plaintext, int round, uint16_t *round_keys) { //start 
     uint16_t r16 = plaintext & 0xffff; // to get the original number--> x AND F= x cuz F==1111 in bin
 //    std::cout << "l16, r16 " << std::hex << l16 << " " << std::hex << r16 << "\n";
 
-    uint16_t round_key[round];
-
-    for (int i = 0; i < round; i++) {
-        round_key[i] = 0;
-        round_key[i] = *(round_keys + int(i));
-    }
-
-//    std::cout << "round_key 13R: " << std::hex << round_key[12] << std::endl;
-
-
     /*
      * keyed_r16= output of right halves input xor with round key
      * sub_r16= output of right halves input after sbox
@@ -102,7 +92,7 @@ uint32_t encrypt(uint32_t plaintext, int round, uint16_t *round_keys) { //start 
      * */
 
     for (int r = 0; r < round; r++) {
-        uint16_t keyed_r16 = r16 xor round_key[r]; // r16_x1
+        uint16_t keyed_r16 = r16 xor round_keys[r]; // r16_x1
         uint16_t sub_r16 = substitution(keyed_r16);
         uint16_t per_r16 = permutation(sub_r16);
 
