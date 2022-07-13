@@ -42,16 +42,16 @@ int main(){
 
     std::ofstream main_outdata;
 
-//    main_outdata.open("111test1.txt");
+    main_outdata.open("13R-output-10runs.txt");
 //    std::size_t pos{};
 //    std::string s;
 //    std::cin >> s;
-    int N= 1;
-    int start=0;
+    int N= 10;
+    int start=1;
     for (int i=start; i<N; i++){
         std::string run= std::to_string(i+1);
         int right_pairs_count=attack(run);
-//        main_outdata<< right_pairs_count<< "\n";
+        main_outdata<< "run "<< (i+1)<< ": "<< right_pairs_count<< "\n";
     }
 
     main_outdata.close();
