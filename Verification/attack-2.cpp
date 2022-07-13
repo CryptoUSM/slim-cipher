@@ -5,7 +5,7 @@
 #include <iostream>
 #include <bit>
 #include <bitset>
-#include "key.h"
+#include "../key.h"
 #include "math.h"
 #include <vector>
 
@@ -26,13 +26,13 @@ std::string go_to_line(unsigned int num) {
     return x;
 }
 
-void attack() {
+int attack(std::string run) {
     std::ofstream key_outdata;
     std::ofstream verify_outdata;
 
     // output file name
-    std::string verify_file = go_to_line(2) + "R-verification.txt";
-    std::string key_file = go_to_line(2) + "R-all_keys.txt";
+    std::string verify_file = go_to_line(2) + "R-verification-" + run + ".txt";
+    std::string key_file = go_to_line(2) + "R-all_keys-" + run + ".txt";
 
     verify_outdata.open(verify_file, std::fstream::app);
     key_outdata.open(key_file, std::fstream::app);
@@ -45,7 +45,6 @@ void attack() {
 //    uint8_t *master_key;
 //    master_key = randomize_master_key();
 
-    // this set of keys give the best experimental outputs
     uint8_t master_key[20] = {
             0b0110,
             0b0101,
@@ -82,7 +81,6 @@ void attack() {
 
     uint16_t r16_cDiff = (beta & 0xffff);
 
-    // put right half through sBox, but ignore the inactive nibbles-->0
     uint16_t fBox_sub_beta = 0;
     uint16_t x1 = r16_cDiff;
     for (int i = 0; i < 4; i++) {
@@ -112,7 +110,14 @@ void attack() {
     // linear filtering
     uint16_t *round_keys;
     round_keys = key_scheduling(master_key, round_to_encrypt);
-    std::cout << "Round 13 key(key to recover): " << std::hex << round_keys[12] << "\n";
+
+    for (int i = 0; i < round_to_encrypt; i++) {
+        std::cout << "key " << i << ": " << std::hex << round_keys[i] << std::endl;
+    }
+
+    for (int i = 0; i < 20; i++) {
+        key_outdata << "master_key " << i << ":0b " << std::bitset<8>(master_key[i]) << std::endl;
+    }
 
     for (int j = 0; j < pt_pairs_count; j++) {
 
@@ -134,18 +139,14 @@ void attack() {
         first = first + increment;
     }
 
-    // for verification
     int right_pairs_count = verification(first_ciphertext, second_ciphertext, first_plaintext,
                                          second_plaintext, verify_file, round_keys, round_to_encrypt, beta);
 
-    std::cout << "Count of right pair(s): " << std::dec << right_pairs_count << "\n";
-
     // how many pairs left
     int distinguisher_prob = first_ciphertext.size() / pow(2, stol(go_to_line(1), &pos, 10));
-    std::cout << "Probability of Distinguisher " << distinguisher_prob << "\n";
-    key_outdata << "Probability of Distinguisher " << distinguisher_prob << "\n";
+    verify_outdata << "Probability of Distinguisher " << distinguisher_prob << "\n";
 
-    // count how many inactive bits
+// count how many inactive bits
 //    int active_bits = 0;
 //    for (int j = 0; j < 4; j++) {
 //        int cur = r16_cDiff & 0xf;
@@ -210,5 +211,6 @@ void attack() {
     verify_outdata.close();
     key_outdata.close();
 
+    return right_pairs_count;
 }
 

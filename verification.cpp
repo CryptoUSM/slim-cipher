@@ -17,8 +17,8 @@
 
 
 int verification(std::vector<uint32_t> first_ciphertext, std::vector<uint32_t> second_ciphertext,
-                  std::vector<uint32_t> first_plaintext,std::vector<uint32_t> second_plaintext,
-                  std::string verify_file, uint16_t *round_keys, int round_to_encrypt, uint32_t beta){
+                 std::vector<uint32_t> first_plaintext, std::vector<uint32_t> second_plaintext,
+                 std::string verify_file, uint16_t *round_keys, int round_to_encrypt, uint32_t beta) {
     std::ofstream verify_outdata;
     verify_outdata.open(verify_file, std::fstream::app);
 

@@ -39,23 +39,21 @@ uint16_t permutation(uint16_t x) {
     return total;
 }
 
-uint32_t one_round_decrypt(uint32_t ciphertext, uint16_t subkey ) {
+uint32_t one_round_decrypt(uint32_t ciphertext, uint16_t subkey) {
     uint16_t l16 = ((ciphertext >> 16) & 0xffff);
     uint16_t r16 = ciphertext & 0xffff;
 
     // to retrieve back the value after F funxtion
-    uint16_t fBox_l16 =permutation(substitution(( l16 xor subkey)));
-    uint16_t rev_xor= fBox_l16 xor r16; // left side
+    uint16_t fBox_l16 = permutation(substitution((l16 xor subkey)));
+    uint16_t rev_xor = fBox_l16 xor r16; // left side
 
-    uint32_t plaintext= (rev_xor<<16)| l16;
-
-//    std::cout<< std::hex<< "final: "<< plaintext << "\n";
+    uint32_t plaintext = (rev_xor << 16) | l16;
 
     return plaintext;
 
 }
 
-uint32_t one_round_encrypt(uint32_t plaintext, uint16_t subkey ) {
+uint32_t one_round_encrypt(uint32_t plaintext, uint16_t subkey) {
     uint16_t l16 = ((plaintext >> 16) & 0xffff);
     uint16_t r16 = plaintext & 0xffff;
 
@@ -66,8 +64,6 @@ uint32_t one_round_encrypt(uint32_t plaintext, uint16_t subkey ) {
     uint16_t next_r16 = l16 xor per_r16;
     l16 = r16;
     r16 = next_r16;
-
-//    std::cout<< std::hex<< "final: "<< plaintext << "\n";
 
     uint32_t ciphertext = (l16 << 16) + r16;
 
@@ -108,14 +104,9 @@ uint32_t encrypt(uint32_t plaintext, int round, uint16_t *round_keys) { //start 
         l16 = r16;
         r16 = next_r16;
 
-//        std::cout << "next r16: " << std::hex << r16 << std::endl;
-//        std::cout << "next l16: " << std::hex << l16 << std::endl;
-
     }
 
     ciphertext = (l16 << 16) + r16;
-
-//    std::cout << "output2: " << std::hex << ciphertext << "\n";
 
     return ciphertext;
 
