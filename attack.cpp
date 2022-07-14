@@ -10,40 +10,17 @@
 #include <vector>
 
 #include <fstream>
-#include <limits>
-
-std::string go_to_line(unsigned int num) {
-    std::fstream file("input-param.txt");
-
-    file.seekg(std::ios::beg);
-    for (int i = 0; i < num - 1; ++i) {
-        file.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    }
-
-    std::string x;
-    file >> x;
-
-    return x;
-}
 
 void attack() {
     std::ofstream key_outdata;
     std::ofstream verify_outdata;
 
     // output file name
-    std::string verify_file = go_to_line(2) + "R-verification.txt";
-    std::string key_file = go_to_line(2) + "R-all_keys.txt";
+    std::string verify_file = "13R-verification.txt";
+    std::string key_file = "13R-all-keys.txt";
 
     verify_outdata.open(verify_file, std::fstream::app);
     key_outdata.open(key_file, std::fstream::app);
-
-    std::fstream file("input-param.txt");
-    std::size_t pos{}; // for str--> int conversion
-
-    int round_to_encrypt = stol(go_to_line(2), &pos, 10);
-
-//    uint8_t *master_key;
-//    master_key = randomize_master_key();
 
     // this set of keys give the best experimental outputs
     uint8_t master_key[20] = {
@@ -69,10 +46,10 @@ void attack() {
             0b1011,
     };
 
-    int pt_pairs_count = pow(2, stol(go_to_line(1), &pos, 10));
-
-    uint32_t alpha = stol(go_to_line(3), &pos, 16);
-    uint32_t beta = stol(go_to_line(4), &pos, 16);
+    int pt_pairs_count = pow(2, 30);
+    int round_to_encrypt = 13;
+    uint32_t alpha = 0x0B82000A;
+    uint32_t beta = 0x0A00801B;
 
     std::vector<uint32_t> first_ciphertext;
     std::vector<uint32_t> second_ciphertext;
@@ -84,15 +61,13 @@ void attack() {
 
     // put right half through sBox, but ignore the inactive nibbles-->0
     uint16_t fBox_sub_beta = 0;
-    uint16_t x1 = r16_cDiff;
     for (int i = 0; i < 4; i++) {
-        int rem = x1 & 0xf;
+        int rem = r16_cDiff & (0xf << (i*4));
         if (rem != 0) {
             fBox_sub_beta += (0 << 4 * i);
         } else {
             fBox_sub_beta += (0b1111 << 4 * i);
         }
-        x1 = x1 >> 4;
     }
 
     // represent known bits as 1
@@ -105,9 +80,9 @@ void attack() {
     uint32_t temp_late = ((r16_cDiff << 16) + 0);
     mask = ((0xffff << 16) + mask);
 
-    uint32_t first = stol(go_to_line(5), &pos, 16);
+    uint32_t first = 0x1234abcd;
     uint32_t second;
-    int increment = stol(go_to_line(6), &pos, 10); //should be a prime number
+    int increment = 7; //should be a prime number
 
     // linear filtering
     uint16_t *round_keys;
@@ -140,23 +115,13 @@ void attack() {
 
     std::cout << "Count of right pair(s): " << std::dec << right_pairs_count << "\n";
 
-    // how many pairs left
-    int distinguisher_prob = first_ciphertext.size() / pow(2, stol(go_to_line(1), &pos, 10));
-    std::cout << "Probability of Distinguisher " << distinguisher_prob << "\n";
-    key_outdata << "Probability of Distinguisher " << distinguisher_prob << "\n";
+    // ratio of how many pairs left
+    int distinguisher_prob =(right_pairs_count + first_ciphertext.size());
+    std::cout << "Distinguisher Probability: " << distinguisher_prob << "\n";
+    key_outdata << "Distinguisher Probability: " << distinguisher_prob << "\n";
 
-    // count how many inactive bits
-//    int active_bits = 0;
-//    for (int j = 0; j < 4; j++) {
-//        int cur = r16_cDiff & 0xf;
-//        if (cur != 0) {
-//            active_bits++;
-//        }
-//        r16_cDiff = r16_cDiff >> 4;
-//    }
-//
-    uint32_t key_counter = pow(2, 12);
     std::vector<uint16_t> subkeys;
+    uint32_t key_counter = pow(2, 12);
     int subkeys_hits[key_counter];
     std::fill_n(subkeys_hits, key_counter, 0);
 
@@ -173,7 +138,6 @@ void attack() {
             subkeys.push_back(generated_key);
         }
     }
-
 
     for (int j = 0; j < subkeys.size(); j++) {
         for (int k = 0; k < first_ciphertext.size(); k++) {
@@ -200,7 +164,7 @@ void attack() {
         }
     }
     std::cout << "Count of possible right key(s): " << std::dec << possible_subkeys.size() << " - " << max_hit
-              << "hits \n";
+              << " hits \n";
 
     //print the possible subkeys
     for (int j = 0; j < possible_subkeys.size(); j++) {
