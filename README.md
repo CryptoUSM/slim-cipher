@@ -15,7 +15,9 @@ IEEE Access, 8, 203747-203757.
   - slim32.yaml: input file for running differential clustering (mode 4)
 
 - slim.cpp: SLIM encryption and decryption 
-- slim-key.cpp: SLIM key scheduling algorithm
+- slim-key.cpp: SLIM key scheduling and master keys randomization algorithm
 - slim-ddt.cpp: generate SLIM Differential Distribution Table 
-- slim-attack.cpp: SLIM key recovery attack
+- attack.cpp: SLIM key recovery attack
+- main.cpp: Main script running everything
+
 
