@@ -5,24 +5,46 @@
 #include <iostream>
 #include <bit>
 #include <bitset>
-#include "key.h"
+#include "../key.h"
 #include "math.h"
 #include <vector>
 
 #include <fstream>
+#include <limits>
 
-void attack() {
+std::string go_to_line(unsigned int num) {
+    std::fstream file("input-param.txt");
+
+    file.seekg(std::ios::beg);
+    for (int i = 0; i < num - 1; ++i) {
+        file.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+
+    std::string x;
+    file >> x;
+
+    return x;
+}
+
+int attack(std::string run) {
     std::ofstream key_outdata;
     std::ofstream verify_outdata;
 
     // output file name
-    std::string verify_file = "13R-verification.txt";
-    std::string key_file = "13R-all-keys.txt";
+    std::string verify_file = go_to_line(2) + "R-verification-" + run + ".txt";
+    std::string key_file = go_to_line(2) + "R-all_keys-" + run + ".txt";
 
     verify_outdata.open(verify_file, std::fstream::app);
     key_outdata.open(key_file, std::fstream::app);
 
-    // this set of keys give the best experimental outputs
+    std::fstream file("input-param.txt");
+    std::size_t pos{}; // for str--> int conversion
+
+    int round_to_encrypt = stol(go_to_line(2), &pos, 10);
+
+//    uint8_t *master_key;
+//    master_key = randomize_master_key();
+
     uint8_t master_key[20] = {
             0b0110,
             0b0101,
@@ -46,10 +68,10 @@ void attack() {
             0b1011,
     };
 
-    int pt_pairs_count = pow(2, 30);
-    int round_to_encrypt = 13;
-    uint32_t alpha = 0x0B82000A;
-    uint32_t beta = 0x0A00801B;
+    int pt_pairs_count = pow(2, stol(go_to_line(1), &pos, 10));
+
+    uint32_t alpha = stol(go_to_line(3), &pos, 16);
+    uint32_t beta = stol(go_to_line(4), &pos, 16);
 
     std::vector<uint32_t> first_ciphertext;
     std::vector<uint32_t> second_ciphertext;
@@ -59,15 +81,16 @@ void attack() {
 
     uint16_t r16_cDiff = (beta & 0xffff);
 
-    // put right half through sBox, but ignore the inactive nibbles-->0
     uint16_t fBox_sub_beta = 0;
+    uint16_t x1 = r16_cDiff;
     for (int i = 0; i < 4; i++) {
-        int rem = r16_cDiff & (0xf << (i*4));
+        int rem = x1 & 0xf;
         if (rem != 0) {
             fBox_sub_beta += (0 << 4 * i);
         } else {
             fBox_sub_beta += (0b1111 << 4 * i);
         }
+        x1 = x1 >> 4;
     }
 
     // represent known bits as 1
@@ -80,14 +103,21 @@ void attack() {
     uint32_t temp_late = ((r16_cDiff << 16) + 0);
     mask = ((0xffff << 16) + mask);
 
-    uint32_t first = 0x1234abcd;
+    uint32_t first = stol(go_to_line(5), &pos, 16);
     uint32_t second;
-    int increment = 7; //should be a prime number
+    int increment = stol(go_to_line(6), &pos, 10); //should be a prime number
 
     // linear filtering
     uint16_t *round_keys;
     round_keys = key_scheduling(master_key, round_to_encrypt);
-    std::cout << "Round 13 key(key to recover): " << std::hex << round_keys[12] << "\n";
+
+    for (int i = 0; i < round_to_encrypt; i++) {
+        std::cout << "key " << i << ": " << std::hex << round_keys[i] << std::endl;
+    }
+
+    for (int i = 0; i < 20; i++) {
+        key_outdata << "master_key " << i << ":0b " << std::bitset<8>(master_key[i]) << std::endl;
+    }
 
     for (int j = 0; j < pt_pairs_count; j++) {
 
@@ -109,19 +139,25 @@ void attack() {
         first = first + increment;
     }
 
-    // for verification
     int right_pairs_count = verification(first_ciphertext, second_ciphertext, first_plaintext,
                                          second_plaintext, verify_file, round_keys, round_to_encrypt, beta);
 
-    std::cout << "Count of right pair(s): " << std::dec << right_pairs_count << "\n";
+    // how many pairs left
+    int distinguisher_prob = first_ciphertext.size() / pow(2, stol(go_to_line(1), &pos, 10));
+    verify_outdata << "Probability of Distinguisher " << distinguisher_prob << "\n";
 
-    // ratio of how many pairs left
-    int distinguisher_prob =(right_pairs_count + first_ciphertext.size());
-    std::cout << "Distinguisher Probability: " << distinguisher_prob << "\n";
-    key_outdata << "Distinguisher Probability: " << distinguisher_prob << "\n";
-
-    std::vector<uint16_t> subkeys;
+// count how many inactive bits
+//    int active_bits = 0;
+//    for (int j = 0; j < 4; j++) {
+//        int cur = r16_cDiff & 0xf;
+//        if (cur != 0) {
+//            active_bits++;
+//        }
+//        r16_cDiff = r16_cDiff >> 4;
+//    }
+//
     uint32_t key_counter = pow(2, 12);
+    std::vector<uint16_t> subkeys;
     int subkeys_hits[key_counter];
     std::fill_n(subkeys_hits, key_counter, 0);
 
@@ -138,6 +174,7 @@ void attack() {
             subkeys.push_back(generated_key);
         }
     }
+
 
     for (int j = 0; j < subkeys.size(); j++) {
         for (int k = 0; k < first_ciphertext.size(); k++) {
@@ -164,7 +201,7 @@ void attack() {
         }
     }
     std::cout << "Count of possible right key(s): " << std::dec << possible_subkeys.size() << " - " << max_hit
-              << " hits \n";
+              << "hits \n";
 
     //print the possible subkeys
     for (int j = 0; j < possible_subkeys.size(); j++) {
@@ -174,5 +211,6 @@ void attack() {
     verify_outdata.close();
     key_outdata.close();
 
+    return right_pairs_count;
 }
 

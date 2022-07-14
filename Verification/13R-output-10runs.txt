@@ -1,0 +1,12 @@
+run 1: 5
+run 2: 7
+run 3: 7
+run 4: 0
+run 5: 9
+run 6: 9
+run 7: 0
+run 8: 6
+run 9: 0
+run 10: 0
+
+
