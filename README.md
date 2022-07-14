@@ -21,3 +21,14 @@ IEEE Access, 8, 203747-203757.
 - main.cpp: Main script running everything
 
 
+## How to run the program
+The script is cater for 13-round key recovery attack. Following are steps to run the script:
+1. cmake CMakeLists.txt
+2. make all
+3. ./slim_cipher
+
+Caution: This execution time of this script is around 1 hour.
+
+
+
+

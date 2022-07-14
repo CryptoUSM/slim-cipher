@@ -3,5 +3,11 @@ project(slim_cipher)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(slim_cipher slim.cpp slim-key.cpp attack.cpp main.cpp key.h verification.cpp cmake-build-debug/Testing/Verification/read-input-dump.txt)
+add_executable(
+        slim_cipher
+        slim.cpp
+        slim-key.cpp
+        attack.cpp verification.cpp
+        main.cpp
+        key.h )
 
